@@ -28,6 +28,8 @@ _ON-DEMAND-SOMM is a platform for wine novices and aficionados to aggregate thei
 
 _ON-DEMAND-SOMM is a responsive React and Ruby on Rails web application that provides a platform for wine enthusiasts of all levels to log comprehensive tasting notes and keep track of their experiences. The public view of the site includes the landing page, complete wine list, and our latest blog post. Once registered and logged in, the user will have full access to the user dashboard enabling cellar management, and full CRUD capabilities on their contributed wines. Secondarily, this platform offers a cellar management tracker where clients can keep track of their preciously stored vino collection._
 
+_MVP is full crud on user wines - per proposal review with David and Shay_
+
 <br>
 
 ## Goals

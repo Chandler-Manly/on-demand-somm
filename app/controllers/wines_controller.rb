@@ -6,17 +6,18 @@ class WinesController < ApplicationController
   def index
     @wines = Wine.all
 
-    render json: @wines
+    render json: @wines.limit(10).offset(20)
   end
 
   # GET /wines/1
   def show
-    render json: @wine
+    render json: @wine, include: tastings
   end
 
   # POST /wines
   def create
     @wine = Wine.new(wine_params)
+    @wine.user = @current_user
 
     if @wine.save
       render json: @wine, status: :created, location: @wine
@@ -25,7 +26,7 @@ class WinesController < ApplicationController
     end
   end
 
-  # PATCH/PUT /wines/1
+  # PUT /wines/1
   def update
     if @wine.update(wine_params)
       render json: @wine
@@ -47,6 +48,6 @@ class WinesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def wine_params
-      params.require(:wine).permit(:name, :user_id)
+      params.require(:wine).permit(:name)
     end
 end

@@ -21,7 +21,9 @@
 
 _ON-DEMAND-SOMM is a platform for wine novices and aficionados to aggregate their tasting notes. Our team saw an opportunity to simplify and improve this critical part of the wine education process. Moreover, this web-application is a resource to aid wine enthusiasts during their journey._
 
-- RESTful web apps five guiding principles (1)back end and front end work indepently from each other. (2)endpoints on the back end must follow a uniform pattern.(3) 
+- RESTful web apps five guiding principles (1)back end and front end work indepently from each other. (2)endpoints on the back end must follow a uniform pattern.(3) backend must be stateless. (4) front end must be able to cache data. (5)front end completely independent from back end
+
+ 
 
 <br>
 

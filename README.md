@@ -78,7 +78,7 @@ _ON-DEMAND-SOMM is a responsive React and Ruby on Rails web application that pro
 
 ## Component Tree
 
-[ON-DEMAND-SOMM Component Tree](https://whimsical.com/pets-r-us-BYYb4aEnZ6ZQp5euw1pyeM)
+![ON-DEMAND-SOMM Component Tree](https://res.cloudinary.com/dygk00sc0/image/upload/v1617209200/on-demand-somm_2x_k6suos.png)
 
 ***
 
@@ -129,9 +129,14 @@ src
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | File Structure, dependencies, and route layout    |    L     |     3 hrs      |     TBD     |    TBD    |
-| Backend setup: Build a Ruby on Rails server, exposing RESTful JSON endpoints. Build a database with at least 3 tables, Utilize Rails to define models for interacting with the database.Implement working generic controller actions for Full CRUD (index, show, create, update, delete) between non-User tables|    H     |     10 hrs      |     TBD     |     TBD     |
-| Frontend setup: styling with flexbox, full CRUD, implement react-router, consume data from Rails API |    H     |     25 hrs      |     TBD     |     TBD     |
-| Unit Testing (may require additional research but should be testing throughout dev-process) |    H     |     3 hrs      |     TBD     |     TBD     |
+| Backend setup: Build a Ruby on Rails server, exposing RESTful JSON endpoints|    H     |     2 hrs      |     TBD     |     TBD     |
+| Build a database with at least 3 tables|    H     |     3 hrs      |     TBD     |     TBD     |
+| Utilize Rails to define models for interacting with the database|    H     |     3 hrs      |     TBD     |     TBD     |
+| Implement working generic controller actions for Full CRUD (index, show, create, update, delete) between non-User tables|    H     |     2 hrs      |     TBD     |     TBD     |
+| Frontend setup: styling with flexbox|    H     |     10 hrs      |     TBD     |     TBD     |
+| Full CRUD, implement react-router|    H     |     10 hrs      |     TBD     |     TBD     |
+| Consume data from Rails API |    H     |     5 hrs      |     TBD     |     TBD     |
+| Unit Testing (may require additional research but will be testing throughout dev-process) |    H     |     3 hrs      |     TBD     |     TBD     |
 | Post MVP (Let's tackle payments so we can get paid $$$) |    H     |     10 hrs      |     TBD     |     TBD     |
 | TOTAL               |          |     51 hrs      |     TBD     |     TBD     |
 

@@ -78,7 +78,7 @@ _ON-DEMAND-SOMM is a responsive React and Ruby on Rails web application that pro
 
 ## Component Tree
 
-[ON-DEMAND SOMM Component Tree](https://whimsical.com/pets-r-us-BYYb4aEnZ6ZQp5euw1pyeM)
+[ON-DEMAND-SOMM Component Tree](https://whimsical.com/pets-r-us-BYYb4aEnZ6ZQp5euw1pyeM)
 
 ***
 
@@ -144,7 +144,7 @@ src
 ***
 ## ERD Model
 
-![ON-DEMAND SOMM ERD](https://res.cloudinary.com/dygk00sc0/image/upload/v1617201897/on-demand-somm_tbpyis.png)
+![ON-DEMAND-SOMM ERD](https://res.cloudinary.com/dygk00sc0/image/upload/v1617201897/on-demand-somm_tbpyis.png)
 <br>
 
 ***

@@ -15,7 +15,7 @@ puts "#{User.count} users created"
 puts "#{Tasting.count} Tasting created"
 
 @cabernet_sauvignon = Wine.create!(name: 'Cabernet Sauvignon', user: @admin, tastings: [@red])
-@syrah = Wine.create!(name: 'syrah', user: @admin, tastings: [@red])
+@syrah = Wine.create!(name: 'Syrah', user: @admin, tastings: [@red])
 @pinot_noir = Wine.create!(name: 'Pinot Noir', user: @admin, tastings: [@red])
 @sauvignon_blanc = Wine.create!(name: 'Sauvignon Blanc', user: @admin, tastings: [@white])
 @chardonnay = Wine.create!(name: 'Chardonnay', user: @admin, tastings: [@white])

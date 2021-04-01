@@ -9,26 +9,17 @@ Wine.destroy_all
 Tasting.destroy_all
 User.destroy_all
 
-User.create!(username: 'admin', email: 'admin@email.com', password: '123456')
+@admin = User.create!(username: 'admin', email: 'admin@email.com', password: '123456')
 puts "#{User.count} users created"
 
-@salty = Tasting.create!(name: 'salty')
-@sweet = Tasting.create!(name: 'sweet')
-@sour = Tasting.create!(name: 'sour')
-@bitter = Tasting.create!(name: 'bitter')
-@umami = Tasting.create!(name: 'umami')
+@red = Tasting.create!(name: 'red')
+@white = Tasting.create!(name: 'white')
+@bubbles = Tasting.create!(name: 'bubbles')
 
 puts "#{Tasting.count} Tasting created"
 
-Wine.create!(name: 'pizza', user: @admin, tastings: [@salty, @sweet, @umami])
-@ice_cream = Wine.create!(name: 'ice cream', user: @admin)
-
-@ice_cream.tastings.push(@sweet, @salty)
-
-@tacos = Wine.create!(name: 'tacos', user: @admin)
-
-@salty.wines << @tacos
-@sour.wines << @tacos
-@umami.wines << @tacos
+@cabernet_sauvignon = Wine.create!(name: 'Cabernet Sauvignon', user: @admin, tastings: [@red])
+@sauvignon_blanc = Wine.create!(name: 'Sauvignon Blanc', user: @admin, tastings: [@white])
+@champagne = Wine.create!(name: 'Champagne', user: @admin, tastings: [@bubbles])
 
 puts "#{Wine.count} wines created"

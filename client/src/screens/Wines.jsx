@@ -7,7 +7,7 @@ export default function Wines(props) {
       <h3>Wine Test</h3>
       {
         wines.map(wine => (
-          <p>{wine.name}</p>
+          <p key={wine.id}>{wine.name}</p>
         ))
       }
     </div>

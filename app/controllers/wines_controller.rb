@@ -6,7 +6,7 @@ class WinesController < ApplicationController
   def index
     @wines = Wine.all
 
-    render json: @wines.limit(10).offset(20)
+    render json: @wines
   end
 
   # GET /wines/1

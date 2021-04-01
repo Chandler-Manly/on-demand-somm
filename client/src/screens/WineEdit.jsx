@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
 
-export default function WineCreate(props) {
+export default function WineEdit(props) {
   const [formData, setFormData] = useState({
-    name: "",
+    name: ''
   });
   const { name } = formData;
   const { id } = useParams();
@@ -21,7 +21,6 @@ export default function WineCreate(props) {
     }
   }, [wines, id])
 
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
@@ -38,9 +37,14 @@ export default function WineCreate(props) {
       <h3>Edit Wine</h3>
       <label>
         Name:
-        <input type="text" name="name" value={name} onChange={handleChange} />
+        <input
+          type='text'
+          name='name'
+          value={name}
+          onChange={handleChange}
+        />
       </label>
       <button>Submit</button>
     </form>
-  );
+  )
 }

@@ -2,18 +2,19 @@ import { useState } from "react";
 
 export default function WineCreate(props) {
   const [formData, setFormData] = useState({
-    name: "",
-  });
+    name: ''
+  })
   const { name } = formData;
   const { handleCreate } = props;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevState) => ({
+    setFormData(prevState => ({
       ...prevState,
-      [name]: value,
-    }));
-  };
+      [name]: value
+    }))
+  }
+
   return (
     <form onSubmit={(e) => {
       e.preventDefault()
@@ -22,7 +23,12 @@ export default function WineCreate(props) {
       <h3>Create Wine</h3>
       <label>
         Name:
-        <input type="text" name="name" value={name} onChange={handleChange} />
+        <input
+          type='text'
+          name='name'
+          value={name}
+          onChange={handleChange}
+        />
       </label>
       <button>Submit</button>
     </form>

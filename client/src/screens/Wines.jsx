@@ -9,7 +9,7 @@ export default function Wines(props) {
   
   return (
     <div>
-      <h3>Wine Test</h3>
+      <h3>Wines</h3>
       {
         wines.map(wine => (
           <React.Fragment key={wine.id}>

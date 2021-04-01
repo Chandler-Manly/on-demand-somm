@@ -5,6 +5,8 @@ import Tastings from "../screens/Tastings";
 import Wines from "../screens/Wines";
 import WineCreate from "../screens/WineCreate";
 import WineEdit from "../screens/WineEdit";
+import WineDetails from "../screens/WineDetails";
+
 
 import { getAllTastings } from "../services/tastings";
 import { getAllWines } from "../services/wines";
@@ -17,9 +19,7 @@ export default function MainContainer(props) {
   const [tastings, setTastings] = useState([]);
   const [wines, setWines] = useState([]);
   const history = useHistory();
-
   const { currentUser } = props;
-
 
   useEffect(() => {
     const fetchTastings = async () => {
@@ -33,9 +33,9 @@ export default function MainContainer(props) {
     const fetchWines = async () => {
       const wineData = await getAllWines();
       setWines(wineData);
-    };
+    }
     fetchWines();
-  }, []);
+  }, [])
 
   const handleCreate = async (wineData) => {
     const newWine = await postWine(wineData);
@@ -46,20 +46,38 @@ export default function MainContainer(props) {
   const handleUpdate = async (id, wineData) => {
     const updatedWine = await putWine(id, wineData);
     setWines(prevState => prevState.map(wine => {
-      return wine.id === Number(id)? updatedWine:wine
+      return wine.id === Number(id) ? updatedWine : wine
     })) 
     history.push('/wines');
   }
 
   const handleDelete = async (id) => {
     await destroyWine(id);
-    setWines((prevState) => prevState.filter((wine) => wine.id !== id));
-  };
+    setWines(prevState => prevState.filter(wine => wine.id !== id))
+  }
 
   return (
     <Switch>
-      <Route path="/tastings">
-        <Tastings tastings={tastings} />
+      <Route path='/tastings'>
+        <Tastings
+          tastings={tastings}
+        />
+      </Route>
+      <Route path='/wines/new'>
+        <WineCreate
+          handleCreate={handleCreate}
+        />
+      </Route>
+      <Route path="/wines/:id/edit">
+        <WineEdit
+          wines={wines}
+          handleUpdate={handleUpdate}
+        />
+      </Route>
+      <Route path="/wines/:id">
+        <WineDetails
+          tastings={tastings}
+        />
       </Route>
       <Route path="/wines">
         <Wines
@@ -67,15 +85,6 @@ export default function MainContainer(props) {
           handleDelete={handleDelete}
           currentUser={currentUser}
         />
-      </Route>
-      <Route path="/wines/new">
-        <WineCreate
-          handleCreate={handleCreate} />
-      </Route>
-      <Route path="/wines/:id/edit">
-        <WineEdit
-          wines={wines}
-          handleUpdate={handleUpdate} />
       </Route>
     </Switch>
   );

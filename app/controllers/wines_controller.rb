@@ -11,6 +11,7 @@ class WinesController < ApplicationController
 
   # GET /wines/1
   def show
+    @wine = Wine.find(params[:id])
     render json: @wine, include: tastings
   end
 

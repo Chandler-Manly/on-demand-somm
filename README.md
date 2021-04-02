@@ -217,17 +217,6 @@ Material UI: https://material-ui.com/store/?utm_source=docs&utm_medium=referral&
 Wine animation: https://www.animatedimages.org/cat-wine-706.htm?page=2
 
 
-Screen readers: Follow up! 
-
-It takes a village provide shoutouts to these additional resources: 
-Guildsomm <br>
-CMS <br>
-WSET <br>
-Wine Enthusiast<br> 
-Decanter<br>
-Robert Parker<br>
-Vinous <br>
-
 Icons 
 https://www.w3schools.com/icons/default.asp
 

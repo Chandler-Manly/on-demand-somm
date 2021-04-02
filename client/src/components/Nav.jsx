@@ -11,6 +11,7 @@ export default function Nav() {
         alt="Drink Responsibly."
       />
       </Link>
+      
     </div>
   );
 }

@@ -220,9 +220,9 @@ Wine animation: https://www.animatedimages.org/cat-wine-706.htm?page=2
 Screen readers: Follow up! 
 
 Social media accounts to link:<br> 
-FB: https://www.facebook.com/On-Demand-Somm-109988864519549<br>
-IG: https://www.instagram.com/on_demand_somm/<br>
-Twitter: https://twitter.com/ondemandsomm<br>
+FB: <br>
+<br>
+Twitter: <br>
 
 It takes a village provide shoutouts to these additional resources: 
 Guildsomm <br>

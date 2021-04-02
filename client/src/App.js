@@ -10,7 +10,7 @@ import MainContainer from './containers/MainContainer';
 import Layout from './layouts/Layout';
 import Login from './screens/Login';
 import Register from './screens/Register';
-
+import BackgroundVideo from './components/BackgroundVideo'
 // function imports
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth';
 
@@ -50,6 +50,7 @@ function App() {
         currentUser={currentUser}
         handleLogout={handleLogout}
       >
+        <BackgroundVideo/>
         <Switch>
           <Route path='/login'>
             <Login

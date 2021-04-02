@@ -7,16 +7,11 @@ import WineCreate from "../screens/WineCreate";
 import WineEdit from "../screens/WineEdit";
 import WineDetails from "../screens/WineDetails";
 
-
 import { getAllTastings } from "../services/tastings";
 import { getAllWines } from "../services/wines";
 import { destroyWine } from "../services/wines";
 import { postWine } from "../services/wines";
 import { putWine } from "../services/wines";
-
-import WineCards from "../components/WineCards";
-import Search from "../components/Search";
-
 
 export default function MainContainer(props) {
   const [tastings, setTastings] = useState([]);
@@ -83,8 +78,6 @@ export default function MainContainer(props) {
         />
       </Route>
       <Route path="/wines">
-        <WineCards />
-        <Search />
         <Wines
           wines={wines}
           handleDelete={handleDelete}

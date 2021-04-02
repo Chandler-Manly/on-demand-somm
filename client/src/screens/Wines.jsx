@@ -10,7 +10,6 @@ import Modal from "../components/Modal";
 import Sort from "../components/Sort";
 import Search from "../components/Search";
 
-import Layout from "../layouts/Layout";
 
 export default function Wines(props) {
 
@@ -58,17 +57,15 @@ export default function Wines(props) {
       key={index}
     />
   ));
-  
+
   return (
-    <Layout>
+      <div>
+        <h3>Wines</h3>
       <Search onSubmit={handleSubmit} onChange={handleSearch} />
       <Sort onSubmit={handleSubmit} onChange={handleSort} />
       <div className="wines">
         {winesJSX}
-      </div>
-
-      <div>
-        <h3>Wines</h3>
+        </div>
         {wines.map((wine) => (
           <React.Fragment key={wine.id}>
             <Link to={`/wines/${wine.id}`}>
@@ -97,6 +94,5 @@ export default function Wines(props) {
           />
         )}
       </div>
-    </Layout>
   );
 }

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Layout from '../layouts/Layout';
 
 export default function Register(props) {
   const [formData, setFormData] = useState({
@@ -19,7 +18,6 @@ export default function Register(props) {
   };
 
   return (
-    <Layout>
     <form
       onSubmit={(e) => {
         e.preventDefault();
@@ -54,6 +52,5 @@ export default function Register(props) {
       <br />
       <button>Submit</button>
       </form>
-      </Layout>
   );
 }

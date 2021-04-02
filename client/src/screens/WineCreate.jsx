@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Layout from '../layouts/Layout';
 
 export default function WineCreate(props) {
   const [formData, setFormData] = useState({
@@ -17,7 +16,6 @@ export default function WineCreate(props) {
   }
 
   return (
-    <Layout>
     <form onSubmit={(e) => {
       e.preventDefault()
       handleCreate(formData)
@@ -34,6 +32,5 @@ export default function WineCreate(props) {
       </label>
       <button>Submit</button>
       </form>
-      </Layout>
   );
 }

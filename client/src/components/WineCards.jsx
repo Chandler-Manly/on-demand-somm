@@ -25,7 +25,7 @@ class WineCards extends Component {
 
     return (
       <div className="wine-cards">
-        <div className="latest">LATEST</div>
+        <div className="latest">FEATURED WINES</div>
         <div className="cards">
           {CARDS}
         </div>

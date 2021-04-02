@@ -5,11 +5,8 @@ import '../assets/Nav.css';
 const Nav = () => {
 
     return (
-        <nav>
         <div className="nav">
-          <h2>Nav</h2>
             </div>
-        </nav>
     )
 
 }

@@ -57,6 +57,12 @@ function App() {
           <Route path="/login">
             <Login handleLogin={handleLogin} />
           </Route>
+          <Route path="/blog">
+            Coming soon!
+          </Route>
+          <Route path="/check-out">
+            Coming soon!
+          </Route>
           <Route path="/register">
             <Register handleRegister={handleRegister} />
           </Route>

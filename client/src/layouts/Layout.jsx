@@ -16,12 +16,18 @@ export default function Layout(props) {
               <button onClick={handleLogout}>Logout</button>
             </>
             :
-            <Link to='/login'>Login/Register</Link>
+          <Link to='/login' className="fa fa-user-circle-o"></Link>
         }
+      
+
+
       {currentUser && (
         <>
           <Link to='/wines'>Wines</Link>
-          <Link to='/tastings'>Tastings</Link>
+          <Link to='/tastings'>Tastings</Link><br/>
+          <Link to='/blog'>Blog</Link>
+        <Link to='/check-out' className="fa fa-shopping-bag"><div className="fa fa-cc-stripe	
+">Stripe</div></Link>
         </>
       )}
 

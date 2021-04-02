@@ -54,7 +54,6 @@ export default function Wines(props) {
     <Wine
       _id={wine._id}
       name={wine.name}
-      imgURL={wine.imgURL}
       key={index}
     />
   ));

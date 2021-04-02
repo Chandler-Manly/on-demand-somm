@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { addTasting } from '../services/tastings';
 import { getOneWine } from '../services/wines';
+import Layout from '../layouts/Layout';
 
 export default function WineDetails(props) {
   const [wineItem, setWineItem] = useState(null);
@@ -29,6 +30,7 @@ export default function WineDetails(props) {
   }
 
   return (
+    <Layout>
     <div>
       <h3>{wineItem?.name}</h3>
       {wineItem?.tastings.map(tasting => (
@@ -46,6 +48,7 @@ export default function WineDetails(props) {
         </select>
         <button>Add</button>
       </form>
-    </div>
+      </div>
+      </Layout>
   )
 }

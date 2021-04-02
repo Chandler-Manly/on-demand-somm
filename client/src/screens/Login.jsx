@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Layout from '../layouts/Layout';
+
 
 export default function Login(props) {
   const [formData, setFormData] = useState({
@@ -18,6 +20,8 @@ export default function Login(props) {
   }
 
   return (
+    <Layout>
+      
     <form onSubmit={(e)=>{
       e.preventDefault();
       handleLogin(formData);
@@ -45,6 +49,7 @@ export default function Login(props) {
       <br />
       Not signed up yet?<Link to='/register'>Register</Link>
       <button>Submit</button>
-    </form>
+      </form>
+      </Layout>
   )
 }

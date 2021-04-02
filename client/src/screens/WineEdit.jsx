@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
+import Layout from '../layouts/Layout';
 
 export default function WineEdit(props) {
   const [formData, setFormData] = useState({
@@ -30,6 +31,7 @@ export default function WineEdit(props) {
   };
 
   return (
+    <Layout>
     <form onSubmit={(e) => {
       e.preventDefault();
       handleUpdate(id, formData);
@@ -45,6 +47,7 @@ export default function WineEdit(props) {
         />
       </label>
       <button>Submit</button>
-    </form>
+      </form>
+      </Layout>
   )
 }

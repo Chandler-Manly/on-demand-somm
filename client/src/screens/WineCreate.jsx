@@ -30,7 +30,7 @@ export default function WineCreate(props) {
           onChange={handleChange}
         />
       </label>
-      <button>Submit</button>
+      <button>Add Wine</button>
       </form>
   );
 }

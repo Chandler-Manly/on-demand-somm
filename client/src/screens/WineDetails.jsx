@@ -13,7 +13,6 @@ export default function WineDetails(props) {
     const fetchWineItem = async () => {
       const wineData = await getOneWine(id);
       setWineItem(wineData);
-      console.log(wineData);
     }
     fetchWineItem()
   }, [id])

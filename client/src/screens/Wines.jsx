@@ -37,6 +37,7 @@ export default function Wines(props) {
       case "name-descending":
         setQueriedWines(ZA(queriedWines));
         break;
+      default: (setQueriedWines(AZ(queriedWines)))
     }
   };
 

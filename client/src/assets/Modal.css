@@ -1,0 +1,19 @@
+.modal-container {
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,.6);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  border-radius: 5px;
+  border: 1px solid black;
+  background: white;
+  padding: 30px;
+}

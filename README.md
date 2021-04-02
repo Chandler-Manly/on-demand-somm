@@ -154,7 +154,7 @@ src
 ***
 ## ERD Model
 
-![ON-DEMAND-SOMM ERD](https://res.cloudinary.com/dygk00sc0/image/upload/v1617218283/on-demand-somm_1_c45jns.png)
+![ON-DEMAND-SOMM ERD](https://res.cloudinary.com/dygk00sc0/image/upload/v1617398434/on-demand-somm_hpff9a.png)
 <br>
 
 ***
@@ -218,11 +218,6 @@ Wine animation: https://www.animatedimages.org/cat-wine-706.htm?page=2
 
 
 Screen readers: Follow up! 
-
-Social media accounts to link:<br> 
-FB: <br>
-<br>
-Twitter: <br>
 
 It takes a village provide shoutouts to these additional resources: 
 Guildsomm <br>

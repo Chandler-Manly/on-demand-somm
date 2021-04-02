@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
-import Layout from '../layouts/Layout';
+import Layout from '../../components/Layout/Layout'
 
 export default function WineEdit(props) {
   const [formData, setFormData] = useState({

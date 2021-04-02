@@ -60,12 +60,12 @@ export default function Wines(props) {
 
   return (
       <div>
-        <h3>Wines</h3>
       <Search onSubmit={handleSubmit} onChange={handleSearch} />
       <Sort onSubmit={handleSubmit} onChange={handleSort} />
       <div className="wines">
         {winesJSX}
-        </div>
+      </div>
+      <h2>Our Wine Collection</h2>
         {wines.map((wine) => (
           <React.Fragment key={wine.id}>
             <Link to={`/wines/${wine.id}`}>

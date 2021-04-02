@@ -8,11 +8,7 @@ const Footer = () => (
         alt="Drink Responsibly." />
       <img src="https://res.cloudinary.com/dygk00sc0/image/upload/v1617376968/GitHub-Mark-32px_yxb9vv.png"
         alt="GitHub"/>
-      
-      <div className='links'>
-        
-    </div>
-      </div>
+            </div>
       
 
   </footer>

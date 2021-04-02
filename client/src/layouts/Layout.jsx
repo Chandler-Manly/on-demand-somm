@@ -1,15 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
+import { Link } from 'react-router-dom';
+
 
 export default function Layout(props) {
   const { currentUser, handleLogout } = props;
   return (
     <div>
-      <header>
         <Nav/>
-        <Link to='/'><h1>ON-DEMAND SOMM</h1></Link>
         {
           currentUser ?
             <>
@@ -19,13 +18,13 @@ export default function Layout(props) {
             :
             <Link to='/login'>Login/Register</Link>
         }
-      </header>
       {currentUser && (
         <>
           <Link to='/wines'>Wines</Link>
           <Link to='/tastings'>Tastings</Link>
         </>
       )}
+
       {props.children}
       <Footer />
     </div>

@@ -46,7 +46,7 @@ class MasterForm extends React.Component {
   };
   handleSubmit = async (event) => {
     event.preventDefault();
-    await postWine(this.state, this.props.user._id);
+    await postWine(this.state, this.props.user.id);
     const { history } = this.props;
     if(history) history.push('/wines')
   };
@@ -114,7 +114,7 @@ class MasterForm extends React.Component {
     return (
       <React.Fragment>
         <div className="form-header">Add Wine Here!</div>
-        <div className="step-count">Step {this.state.currentStep} of 3: Appearance, Nose, Palate</div>
+        <div className="step-count">Step {this.state.currentStep} of 3</div>
         <div className="submission-form">
           <form
             className="submission-form-template"

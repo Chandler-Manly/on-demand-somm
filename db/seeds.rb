@@ -8,9 +8,13 @@ User.destroy_all
 @admin = User.create!(username: 'admin', email: 'admin@email.com', password: '123456')
 puts "#{User.count} users created"
 
-@red = Tasting.create!(name: 'Red')
-@white = Tasting.create!(name: 'White')
-@bubbles = Tasting.create!(name: 'Bubbles')
+@red = Tasting.create!(name:'red', clarity: 'hazy')
+@white = Tasting.create!(name: 'White', clarity: 'hazy')
+@bubbles = Tasting.create!(name: 'Bubbles', clarity: 'clear')
+
+# @clear = Tasting.create!(clarity: 'clear')
+# @hazy = Tasting.create!(clarity: 'hazy')
+
 
 puts "#{Tasting.count} Tasting created"
 

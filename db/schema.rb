@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_31_211642) do
+ActiveRecord::Schema.define(version: 2021_04_03_155403) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,29 @@ ActiveRecord::Schema.define(version: 2021_03_31_211642) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "clarity"
+    t.string "intensity_aromatics"
+    t.string "color"
+    t.string "observations"
+    t.string "condition"
+    t.string "intensity_palate"
+    t.string "aromas_primary"
+    t.string "aromas_secondary"
+    t.string "aromas_tertiary"
+    t.string "development"
+    t.string "sweetness"
+    t.string "acidity"
+    t.string "tannin"
+    t.string "alcohol"
+    t.string "body"
+    t.string "mousse"
+    t.string "intensity_flavor"
+    t.string "flavor_characteristics_primary"
+    t.string "flavor_characteristics_secondary"
+    t.string "flavor_characteristics_tertiary"
+    t.string "finish"
+    t.string "quality_level"
+    t.string "ageing_potential"
   end
 
   create_table "tastings_wines", id: false, force: :cascade do |t|
@@ -41,6 +64,8 @@ ActiveRecord::Schema.define(version: 2021_03_31_211642) do
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "varietal"
+    t.string "producer"
     t.index ["user_id"], name: "index_wines_on_user_id"
   end
 

@@ -1,0 +1,44 @@
+.create-image-address {
+  margin-bottom: 20px;
+  width: 500px;
+  background-color: whitesmoke;
+}
+
+.create-animal-type{
+  margin-bottom: 20px;
+  width: 200px;
+  
+}
+
+
+.form-control{
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.form-group-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-button {
+  justify-content: center;
+  background-color: whitesmoke;
+  color: #233D4D;
+  width: 100px;
+  align-items: center;
+}
+
+.submit-button:hover {
+  justify-content: center;
+  background-color:  #233D4D;
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 375px){
+  .create-image-address {
+    width: 340px;
+    
+  }
+  }
+  

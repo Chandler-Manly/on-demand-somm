@@ -1,0 +1,62 @@
+.submission-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left:150px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form-header{
+  display: flex;
+  justify-content: center;
+  font-family: "Pacifico", cursive;
+  font-size: 60px;
+  margin-bottom: 20px;
+  color:whitesmoke;
+  padding-top: 20px;
+}
+
+.step-count{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 45px;
+  color:whitesmoke;
+  font-weight: 600;
+}
+
+.next-button, .prev-secondary  {
+  display: flex;
+  justify-content: center;
+  background-color: #233D4D;
+  color: whitesmoke;
+  width: 100px;
+  height: 40px;
+  align-items: center;
+}
+
+.next-button:hover, .prev-secondary:hover  {
+  background-color: whitesmoke;
+  color: #233D4D;
+}
+
+@media screen and (max-width: 375px){
+.form-header {
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.step-count {
+  font-size: 25px;
+}
+
+  .submission-form-template{
+  width: 340px;
+}
+}

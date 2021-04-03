@@ -25,7 +25,6 @@ function Step3(props) {
         onChange={props.handleChange}
         id="dropdown2"
       >
-        {/* eslint-disable-next-line */}
         <option selected={props.sweetness === ""} value="" disable selected>
           Select sweetness
         </option>
@@ -47,7 +46,6 @@ function Step3(props) {
         onChange={props.handleChange}
         id="dropdown3"
       >
-        {/* eslint-disable-next-line */}
         <option selected={props.acidity === ""} value="" disable selected>
           Select acidity
         </option>
@@ -69,7 +67,6 @@ function Step3(props) {
         onChange={props.handleChange}
         id="dropdown4"
       >
-        {/* eslint-disable-next-line */}
         <option selected={props.tannin === ""} value="" disable selected>
           Select tannin
         </option>
@@ -90,7 +87,6 @@ function Step3(props) {
         onChange={props.handleChange}
         id="dropdown5"
       >
-        {/* eslint-disable-next-line */}
         <option selected={props.body === ""} value="" disable selected>
           Select body
         </option>
@@ -111,7 +107,6 @@ function Step3(props) {
         onChange={props.handleChange}
         id="dropdown6"
       >
-        {/* eslint-disable-next-line */}
         <option selected={props.mousse === ""} value="" disable selected>
           Select mousse
         </option>
@@ -133,7 +128,6 @@ function Step3(props) {
         onChange={props.handleChange}
         id="dropdown7"
       >
-        {/* eslint-disable-next-line */}
         <option
           selected={props.intensity_flavor === ""}
           value=""
@@ -162,7 +156,6 @@ function Step3(props) {
         onChange={props.handleChange}
         id="dropdown8"
       >
-        {/* eslint-disable-next-line */}
         <option
           selected={props.flavor_characteristics_primary === ""}
           value=""
@@ -197,7 +190,6 @@ function Step3(props) {
         onChange={props.handleChange}
         id="dropdown9"
       >
-        {/* eslint-disable-next-line */}
         <option
           selected={props.flavor_characteristics_secondary === ""}
           value=""
@@ -232,7 +224,6 @@ function Step3(props) {
         onChange={props.handleChange}
         id="dropdown10"
       >
-        {/* eslint-disable-next-line */}
         <option
           selected={props.flavor_characteristics_tertiary === ""}
           value=""
@@ -263,7 +254,6 @@ function Step3(props) {
         onChange={props.handleChange}
         id="dropdown11"
       >
-        {/* eslint-disable-next-line */}
         <option selected={props.finish === ""} value="" disable selected>
           Select finish
         </option>
@@ -284,7 +274,6 @@ function Step3(props) {
         onChange={props.handleChange}
         id="dropdown12"
       >
-        {/* eslint-disable-next-line */}
         <option selected={props.quality_level === ""} value="" disable selected>
           Select quality_level
         </option>
@@ -311,7 +300,6 @@ function Step3(props) {
         onChange={props.handleChange}
         id="dropdown13"
       >
-        {/* eslint-disable-next-line */}
         <option
           selected={props.ageing_potential === ""}
           value=""

@@ -19,15 +19,15 @@ const WinesofMine = (props) => {
   }
   
   const userWines = allMyWines.filter((wine) => props.currentUser.id === wine.user_id);
-  console.log(userWines)
+
   return (
-    // <Layout user={props.user}>
+    <Layout user={props.currentUser}>
       <div className="user-wine-container">
         <div className="user-wines-text">
           <div className="user-wines-heading"> My Tasted Wines </div>
         </div>
         <div className="user-wines">
-          {allMyWines.map((wine, index) => (
+          {userWines.map((wine, index) => (
             <Wine
               id={wine.id}
               name={wine.name}

@@ -46,7 +46,7 @@ class MasterForm extends React.Component {
   };
   handleSubmit = async (event) => {
     event.preventDefault();
-    await postWine(this.state, this.props.user._id);
+    await postWine(this.state, this.props.user.id);
     const { history } = this.props;
     if(history) history.push('/wines')
   };

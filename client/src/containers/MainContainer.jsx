@@ -76,6 +76,7 @@ export default function MainContainer(props) {
         />
       </Route>
       <Route path="/wines/:id">
+        <h3>Wine Details Page</h3>
         <WineDetails
           tastings={tastings}
         />

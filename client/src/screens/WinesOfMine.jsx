@@ -13,12 +13,14 @@ const WinesofMine = (props) => {
     };
     pourMyWines();
   }, []);
-  
+
   if (!allMyWines || !props.currentUser) {
     return <div>One moment please...Relax pour a glass of wine!</div>;
   }
-  
-  const userWines = allMyWines.filter((wine) => props.currentUser.id === wine.user_id);
+
+  const userWines = allMyWines.filter(
+    (wine) => props.currentUser.id === wine.user_id
+  );
 
   return (
     <Layout user={props.currentUser}>
@@ -37,7 +39,7 @@ const WinesofMine = (props) => {
           ))}
         </div>
       </div>
-    // </Layout>
+    </Layout>
   );
 };
 

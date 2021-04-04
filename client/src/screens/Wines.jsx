@@ -59,7 +59,8 @@ export default function Wines(props) {
   ));
 
   return (
-      <div>
+    <div>
+      <div className="our-wine-list-header">Our Wine List</div>
       <Search onSubmit={handleSubmit} onChange={handleSearch} />
       <Sort onSubmit={handleSubmit} onChange={handleSort} />
       <div className="wines">

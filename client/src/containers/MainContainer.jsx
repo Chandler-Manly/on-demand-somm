@@ -6,12 +6,17 @@ import Wines from "../screens/Wines";
 import WineCreate from "../screens/WineCreate";
 import WineEdit from "../screens/WineEdit";
 import WineDetails from "../screens/WineDetails";
+import WinesOfMine from "../screens/WinesOfMine";
+
+
 
 import { getAllTastings } from "../services/tastings";
 import { getAllWines } from "../services/wines";
 import { destroyWine } from "../services/wines";
 import { postWine } from "../services/wines";
 import { putWine } from "../services/wines";
+
+import AboutUs from "../assets/AboutUs";
 
 export default function MainContainer(props) {
   const [tastings, setTastings] = useState([]);
@@ -56,11 +61,9 @@ export default function MainContainer(props) {
 
   return (
     <Switch>
-      <Route path='/tastings'>
-        <Tastings
-          tastings={tastings}
-        />
-      </Route>
+        <Route path='/about-us'>
+        <AboutUs/>
+        </Route>
       <Route path='/wines/new'>
         <WineCreate
           handleCreate={handleCreate} user={props.currentUser}
@@ -84,6 +87,16 @@ export default function MainContainer(props) {
           currentUser={currentUser}
         />
       </Route>
+        <Route path='/tastings'>
+          <Tastings
+            tastings={tastings}
+          />
+      </Route>
+      <Route path="/users/:id">
+        <WinesOfMine
+        currentUser={currentUser}
+        />
+        </Route>
     </Switch>
   );
 }

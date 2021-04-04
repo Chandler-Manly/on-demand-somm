@@ -9,13 +9,15 @@ import MainContainer from "./containers/MainContainer";
 // component imports
 import Layout from "./layouts/Layout";
 import Login from "./screens/Login";
-import Register from "./screens/Register";
-import BackgroundVideo from "./components/BackgroundVideo";
-import BackgroundVideoTwo from "./components/BackgroundVideoTwo";
-import CarouselOne from "./components/CarouselOne";
-import CarouselTwo from "./components/CarouselTwo";
-import CarouselThree from "./components/CarouselThree";
+// import Register from "./screens/Register";
+// import Landing from "./screens/Landing";
+// import BackgroundVideo from "./components/BackgroundVideo";
 
+// import CarouselOne from "./components/CarouselOne";
+// import CarouselTwo from "./components/CarouselTwo";
+// import CarouselThree from "./components/CarouselThree";
+
+// import Chatbotbot from './assets/chatbot/Chatbot';
 
 
 // function imports
@@ -25,6 +27,7 @@ import {
   removeToken,
   verifyUser,
 } from "./services/auth";
+import AboutUs from "./assets/AboutUs";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -61,26 +64,13 @@ function App() {
       <Layout currentUser={currentUser} handleLogout={handleLogout}>
         <Switch>
           <Route path="/login">
-            <Login handleLogin={handleLogin} />
+            <Login handleLogin={handleLogin} handleRegister={handleRegister}/>
           </Route>
-          <Route path="/blog">
-            Coming soon!
-          </Route>
-          <Route path="/check-out">
-            Coming soon!
-          </Route>
-          <Route path="/register">
-            <Register handleRegister={handleRegister} />
+          <Route path="/about-us">
+            <AboutUs/>
           </Route>
           <Route path="/">
-            <MainContainer currentUser={currentUser} />
-            
-            <div className="about-us">ABOUT US<br/>ON-DEMAND-SOMM is a platform for wine novices and aficionados to aggregate their tasting notes. Our team saw an opportunity to simplify and improve this critical part of the wine education process. Moreover, this web-application is a resource to aid wine enthusiasts during their journey.</div>
-            <BackgroundVideo />
-            <BackgroundVideoTwo />
-            <CarouselOne/>
-            <CarouselTwo/>
-            <CarouselThree/>
+            <MainContainer currentUser={currentUser}/>
 
           </Route>
         </Switch>

@@ -6,8 +6,9 @@ const BackgroundVideoTwo = () => {
 
   return (
     <div>
-   
-        <div className="background-video-two">
+      
+      <div className="video-header"><h3>OUR STORY</h3></div>
+      <div className="background-video-two">
         <video autoPlay="autoplay" loop="loop" muted>
           <source src={videoSourceTwo} type="video/mp4" />
         </video>

@@ -1,12 +1,33 @@
+/* .nav-bar-container{
+display:flex;
+justify-content: center;
+flex-direction: column;
+} */
+
 header {
 
-  color: whitesmoke;
+  color: rgb(245, 237, 237);
   font-weight: 600;
   padding-bottom: 10px;
-  background-image:linear-gradient(180deg, #3f6aa5, #2c4260 );
-  
+  background-image:linear-gradient(180deg, #772323, #5e0e0e ); 
+}
+
+.company-values{
+display: flex;
+background-image: linear-gradient(180deg, #772323, #5e0e0e );
+color: whitesmoke;
+font-weight:600;
+justify-content: center;
+
 }
 
 .company-logo {
-  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+}
+
+.login-logic{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 100px;
 }

@@ -1,0 +1,20 @@
+.about-us{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 50px;
+  font-family: 'Covered By Your Grace', cursive;
+}
+
+.about-us-text{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 400px;
+  margin-right: 400px;
+  font-size: x-large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}

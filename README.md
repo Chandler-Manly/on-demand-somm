@@ -207,8 +207,6 @@ Sentiment Analysis: https://www.programmableweb.com/api/summarizebot-rest-api-v1
 
 UI component modal with positive z index
 
-Design Tip: Slight gradient on header 
-
 Mailer: https://medium.com/@dflores_89085/using-actionmailer-with-react-redux-822e0b575dc3
 
 Bootstap icons: https://icons.getbootstrap.com/icons/chat-right-dots-fill/
@@ -216,22 +214,9 @@ Material UI: https://material-ui.com/store/?utm_source=docs&utm_medium=referral&
 
 Wine animation: https://www.animatedimages.org/cat-wine-706.htm?page=2
 
-
 Icons 
 https://www.w3schools.com/icons/default.asp
 
-fas fa-user-circle <br>
-far fa-user-circle<br>
 far fa-thumbs-down<br>
 far fa-thumbs-up<br>
-fas fa-shopping-bag	<br>
-fab fa-stripe-s	<br>
 far fa-comment 	<br>
-
-My tasting notes <br>
-https://images.unsplash.com/photo-1517842645767-c639042777db?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHRhc3RpbmclMjBub3Rlc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60
-
-https://images.unsplash.com/photo-1513618827672-0d7c5ad591b1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fHRhc3RpbmclMjBub3Rlc3xlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60
-
-Cellar management <br> 
-https://images.unsplash.com/photo-1570339012089-0e2dcfbb4439?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzZ8fGNlbGxhcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60

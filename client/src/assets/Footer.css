@@ -1,11 +1,5 @@
-footer {
+footer{
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
-
+  flex-direction: row;
 }
-.fa {
-  display: flex;
-}
-

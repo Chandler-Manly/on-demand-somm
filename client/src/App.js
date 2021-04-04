@@ -10,7 +10,7 @@ import MainContainer from "./containers/MainContainer";
 import Layout from "./layouts/Layout";
 import Login from "./screens/Login";
 import Register from "./screens/Register";
-// import BackgroundVideo from "./components/BackgroundVideo";
+import BackgroundVideo from "./components/BackgroundVideo";
 import BackgroundVideoTwo from "./components/BackgroundVideoTwo";
 import CarouselOne from "./components/CarouselOne";
 import CarouselTwo from "./components/CarouselTwo";
@@ -76,7 +76,7 @@ function App() {
             <MainContainer currentUser={currentUser} />
             
             <div className="about-us">ABOUT US<br/>ON-DEMAND-SOMM is a platform for wine novices and aficionados to aggregate their tasting notes. Our team saw an opportunity to simplify and improve this critical part of the wine education process. Moreover, this web-application is a resource to aid wine enthusiasts during their journey.</div>
-            {/* <BackgroundVideo /> */}
+            <BackgroundVideo />
             <BackgroundVideoTwo />
             <CarouselOne/>
             <CarouselTwo/>

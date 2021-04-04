@@ -1,0 +1,12 @@
+header {
+
+  color: whitesmoke;
+  font-weight: 600;
+  padding-bottom: 10px;
+  background-image:linear-gradient(180deg, #3f6aa5, #2c4260 );
+  
+}
+
+.company-logo {
+  margin-top: -50px;
+}

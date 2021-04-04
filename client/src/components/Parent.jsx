@@ -2,7 +2,7 @@ import React from "react";
 import Step1 from "./Step1";
 import Step2 from "./Step2";
 import Step3 from "./Step3";
-import "./Parent.css";
+import "../assets/Parent.css";
 import { postWine } from "../services/wines";
 import { withRouter } from 'react-router-dom';
 

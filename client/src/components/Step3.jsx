@@ -306,13 +306,19 @@ function Step3(props) {
           disable
           selected
         >
-          Select ageing_potential
+          Select Ageing Potential
         </option>
         <option
           selected={props.ageing_potential === "too-young"}
           value="too-young"
         >
           too-young
+        </option>
+        <option selected={props.ageing_potential === "can-drink-now-but-has-potential-for-ageing"} value="can-drink-now-but-has-potential-for-ageing">
+          Can drink now. But has potential for ageing.
+        </option>
+        <option selected={props.ageing_potential === "drink-now-not-suitable-for-ageing-or-further-ageing"} value="drink-now-not-suitable-for-ageing-or-further-ageing">
+        Drink now. Not suitable for ageing or further ageing.
         </option>
         <option selected={props.ageing_potential === "too-old"} value="too-old">
           too-old

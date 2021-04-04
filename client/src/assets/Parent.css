@@ -14,20 +14,11 @@
 .form-header{
   display: flex;
   justify-content: center;
-  font-family: "Pacifico", cursive;
-  font-size: 60px;
-  margin-bottom: 20px;
-  color:whitesmoke;
-  padding-top: 20px;
 }
 
 .step-count{
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
-  font-size: 45px;
-  color:whitesmoke;
-  font-weight: 600;
 }
 
 .next-button, .prev-secondary  {

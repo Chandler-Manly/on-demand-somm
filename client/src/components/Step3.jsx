@@ -29,7 +29,7 @@ function Step3(props) {
         </option>
       </select>
       
-<input>Any residual sugar --</input>
+<label>Any residual sugar --</label>
       <select
         className="create-sweetness"
         required
@@ -50,7 +50,7 @@ function Step3(props) {
           Dry
         </option>
       </select>
-      <input>Acidity -- PH levels</input>
+      <label>Acidity -- PH levels</label>
 
       <select
         className="create-acidity"
@@ -154,13 +154,13 @@ function Step3(props) {
           selected={props.intensity_flavor === "pronounced"}
           value="pronounced"
         >
-          pronounced
+          Pronounced
         </option>
         <option selected={props.intensity_flavor === "medium"} value="medium">
-          medium
+          Medium
         </option>
         <option selected={props.intensity_flavor === "light"} value="low">
-          low
+          Low
         </option>
       </select>
       <select
@@ -182,19 +182,19 @@ function Step3(props) {
           selected={props.flavor_characteristics_primary === "red-fruit"}
           value="red-fruit"
         >
-          red-fruit
+          Red-fruit
         </option>
         <option
           selected={props.flavor_characteristics_primary === "blue-fruit"}
           value="blue-fruit"
         >
-          blue-fruit
+          Blue-fruit
         </option>
         <option
           selected={props.flavor_characteristics_primary === "black-fruit"}
           value="black-fruit"
         >
-          black-fruit
+          Black-fruit
         </option>
       </select>
       <select
@@ -244,13 +244,13 @@ function Step3(props) {
           disable
           selected
         >
-          Select flavor_characteristics_tertiary
+          Select flavor characteristics tertiary
         </option>
         <option
           selected={props.flavor_characteristics_tertiary === "oxidation"}
           value="oxidation"
         >
-          oxidation
+          Oxidation
         </option>
         <option
           selected={
@@ -258,7 +258,7 @@ function Step3(props) {
           }
           value="fruit-development"
         >
-          fruit-development
+          Fruit development
         </option>
       </select>
       <select

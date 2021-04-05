@@ -55,8 +55,7 @@ class MasterForm extends React.Component {
 
   _next = () => {
     let currentStep = this.state.currentStep;
-    currentStep = currentStep >= 2 ? 4 : currentStep + 1;
-    // currentStep = currentStep + 1;
+    currentStep = currentStep >= 2 ? 3 : currentStep + 1;
     this.setState({
       currentStep: currentStep,
     });
@@ -84,7 +83,7 @@ class MasterForm extends React.Component {
 
   nextButton() {
     let currentStep = this.state.currentStep;
-    if (currentStep !== 4) {
+    if (currentStep < 3) {
       return (
         <button className="next-button" type="button" onClick={this._next}>
           Next
@@ -96,27 +95,25 @@ class MasterForm extends React.Component {
 
   _submit = () => {
     let currentStep = this.state.currentStep;
-    currentStep = currentStep === 4;
+    currentStep = currentStep === 3;
     this.setState({
       currentStep: currentStep,
     });
   };
 
   submitButton() {
-    if (this.state.currentStep === 4) {
-      return (
-        <button className="submit-button" onClick={this.handleSubmit}>
-          Submit
-        </button>
-      );
-    }
+    if (this.state.currentStep === 3)
+    {
+      return(
+    <button className="submit-button" onClick={this.handleSubmit}>Submit</button>
+    )}
   }
 
   render() {
     return (
       <React.Fragment>
         <div className="form-header">Add Wine Here!</div>
-        <div className="step-count">Step {this.state.currentStep} of 4</div>
+        <div className="step-count">Step {this.state.currentStep} of 3</div>
         <div className="submission-form">
           <form className="submission-form-template">
             <Step1
@@ -158,13 +155,10 @@ class MasterForm extends React.Component {
                 this.state.flavor_characteristics_tertiary
               }
               finish={this.state.finish}
-            />
-            <Step4
-              currentStep={this.state.currentStep}
-              handleChange={this.handleChange}
               quality_level={this.state.quality_level}
               ageing_potential={this.state.ageing_potential}
             />
+            
             <div className="form-buttons">
               {this.previousButton()}
               {this.nextButton()}

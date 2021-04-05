@@ -21,17 +21,15 @@
 
 _ON-DEMAND-SOMM is a platform for wine novices and aficionados to aggregate their tasting notes. Our team saw an opportunity to simplify and improve this critical part of the wine education process. Moreover, this web-application is a resource to aid wine enthusiasts during their journey._
 
-- RESTful web apps five guiding principles (1)back end and front end work indepently from each other. (2)endpoints on the back end must follow a uniform pattern.(3) backend must be stateless. (4) front end must be able to cache data. (5)front end completely independent from back end
-
- 
+- Deployed via [Netlify](https://infallible-booth-6493d7.netlify.app/)
 
 <br>
 
 ## MVP
 
-_ON-DEMAND-SOMM is a responsive React and Ruby on Rails web application that provides a platform for wine enthusiasts of all levels to log comprehensive tasting notes and keep track of their experiences. The public view of the site includes the landing page, complete wine list, and our latest blog post. Once registered and logged in, the user will have full access to the user dashboard enabling cellar management, and full CRUD capabilities on their contributed wines. Secondarily, this platform offers a cellar management tracker where clients can keep track of their preciously stored vino collection._
+_ON-DEMAND-SOMM is a responsive, React, and Ruby on Rails web application that provides a platform for wine enthusiasts of all levels to log comprehensive tasting notes and keep track of their beverage experiences. The public view of the site includes the landing page, complete wine list, and our latest blog post. Once registered and logged in, the user will have full access to the user dashboard enabling cellar management, and full CRUD capabilities on their contributed wines. Secondarily, this platform offers a cellar management tracker where clients can keep track of their preciously stored vino collection._
 
-_MVP is full crud on user wines - per proposal review with David and Shay_
+_MVP is full crud on user wines - per proposal review with David and Shay._
 
 <br>
 
@@ -118,8 +116,6 @@ src
       |__ Blog Details
 |__ containers/
       |__ MainContainer
-      |__ WineContainer
-      |__ BlogContainer
 |__ services/
       |__ apiConfig           
       |__ wines.js
@@ -181,7 +177,7 @@ src
 - Placeholder
 
 ***
-## Contributing
+## Open-Source: Contributing
 
 1. Fork and clone
 2. Create your feature branch (`git checkout -b my-new-feature`)
@@ -194,29 +190,3 @@ src
 
 ***
 ***
-<br>
-<br>
-
-## FOR DEVELOPMENT PURPOSES ONLY: P4 ASSETS
-Payment: https://stripe.com/docs/stripe-js/react
-3rd Party API: https://www.programmableweb.com/api/wine-searcher-rest-api-v1
-3rd Party API: https://www.programmableweb.com/api/cocktails-rest-api-v1
-Chat Bots: https://www.freecodecamp.org/news/how-to-build-a-chatbot-with-react/
-
-Sentiment Analysis: https://www.programmableweb.com/api/summarizebot-rest-api-v10
-
-UI component modal with positive z index
-
-Mailer: https://medium.com/@dflores_89085/using-actionmailer-with-react-redux-822e0b575dc3
-
-Bootstap icons: https://icons.getbootstrap.com/icons/chat-right-dots-fill/
-Material UI: https://material-ui.com/store/?utm_source=docs&utm_medium=referral&utm_campaign=home-store#populars
-
-Wine animation: https://www.animatedimages.org/cat-wine-706.htm?page=2
-
-Icons 
-https://www.w3schools.com/icons/default.asp
-
-far fa-thumbs-down<br>
-far fa-thumbs-up<br>
-far fa-comment 	<br>

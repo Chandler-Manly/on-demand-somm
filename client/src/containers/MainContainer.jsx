@@ -80,6 +80,7 @@ export default function MainContainer(props) {
         <WineDetails
           tastings={tastings}
           wines={wines}
+          currentUser={currentUser}
         />
       </Route>
       <Route path="/wines">

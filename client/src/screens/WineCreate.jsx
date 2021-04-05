@@ -4,7 +4,7 @@ import Layout from '../layouts/Layout';
 export default function WineCreate(props) {
 
   return (
-    <Layout user={props.user} backgroundColor={"#84a59d"}>
+    <Layout user={props.user}>
     <div>
       <Parent user={props.user}/>
       </div>

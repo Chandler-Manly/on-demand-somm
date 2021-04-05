@@ -16,6 +16,19 @@
   margin-bottom: 20px;
 }
 
+.create-aromas_secondary {
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.create-aromas_tertiary{
+  width: 500px;
+}
+
+.create-development{
+  width: 500px;
+}
+
 @media screen and (max-width: 375px){
   .create-description {
     width: 340px;

@@ -23,7 +23,7 @@ const WinesofMine = (props) => {
   );
 
   return (
-    <Layout user={props.currentUser}>
+    // <Layout user={props.currentUser}>
       <div className="user-wine-container">
         <div className="user-wines-text">
           <div className="user-wines-heading"> My Tasted Wines </div>
@@ -39,7 +39,7 @@ const WinesofMine = (props) => {
           ))}
         </div>
       </div>
-    </Layout>
+    // </Layout>
   );
 };
 

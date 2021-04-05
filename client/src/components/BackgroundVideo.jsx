@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/BackgroundVideo.css'
+import '../assets/BackgroundVideo.css';
 
 const BackgroundVideo = () => {
   const videoSource = "https://res.cloudinary.com/dygk00sc0/video/upload/v1617323035/on-demand-somm_gexuuv.mp4"

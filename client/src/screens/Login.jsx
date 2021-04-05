@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import '../assets/Login.css';
 
 
 export default function Login(props) {
@@ -19,12 +20,13 @@ export default function Login(props) {
   }
 
   return (
-      
+    <div className="login-form">
+        <h3>Login</h3>
+      <div>
     <form onSubmit={(e)=>{
       e.preventDefault();
       handleLogin(formData);
     }}>
-      <h3>Login</h3>
       <label>
         Username:
         <input
@@ -47,6 +49,8 @@ export default function Login(props) {
       <br />
       Not signed up yet?<Link to='/register'>Register</Link>
       <button>Submit</button>
-      </form>
+        </form>
+        </div>
+      </div>
   )
 }

@@ -9,7 +9,7 @@ import MainContainer from "./containers/MainContainer";
 // component imports
 import Layout from "./layouts/Layout";
 import Login from "./screens/Login";
-// import Register from "./screens/Register";
+import Register from "./screens/Register";
 // import Landing from "./screens/Landing";
 // import BackgroundVideo from "./components/BackgroundVideo";
 
@@ -60,8 +60,8 @@ function App() {
   };
 
   return (
-    <div className="App">
       <Layout currentUser={currentUser} handleLogout={handleLogout}>
+    <div className="App">
         <Switch>
           <Route path="/login">
             <Login handleLogin={handleLogin} handleRegister={handleRegister}/>
@@ -69,13 +69,17 @@ function App() {
           <Route path="/about-us">
             <AboutUs/>
           </Route>
+          <Route path="/register">
+            <Register/>
+          </Route>
+
           <Route path="/">
             <MainContainer currentUser={currentUser}/>
 
           </Route>
         </Switch>
-      </Layout>
     </div>
+      </Layout>
   );
 }
 

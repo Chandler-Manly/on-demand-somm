@@ -20,7 +20,12 @@ class WineCards extends Component {
   render() {
 
     const CARDS = this.state.wines.reverse().map((wine, index) =>
-      index < 8 ? <WineCard _id={wine._id} name={wine.name} imgURL={wine.imgURL} key={index} /> : null
+      index < 8 ?
+        <WineCard
+        _id={wine._id}
+        name={wine.name}
+        key={index}
+      /> : null
     )
 
     return (

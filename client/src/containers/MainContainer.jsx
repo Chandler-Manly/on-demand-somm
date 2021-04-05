@@ -66,7 +66,8 @@ export default function MainContainer(props) {
         </Route>
       <Route path='/wines/new'>
         <WineCreate
-          handleCreate={handleCreate} user={props.currentUser}
+          handleCreate={handleCreate}
+          user={props.currentUser}
         />
       </Route>
       <Route path="/wines/:id/edit">
@@ -76,9 +77,9 @@ export default function MainContainer(props) {
         />
       </Route>
       <Route path="/wines/:id">
-        <h3>Wine Details Page</h3>
         <WineDetails
           tastings={tastings}
+          wines={wines}
         />
       </Route>
       <Route path="/wines">

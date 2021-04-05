@@ -12,7 +12,7 @@ function Step1(props) {
         id="name"
         name="name"
         type="text"
-        placeholder="Enter Wine Name"
+        placeholder="Enter Tasting Note Name"
         value={props.name}
         onChange={props.handleChange}
         autoFocus

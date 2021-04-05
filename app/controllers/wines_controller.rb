@@ -17,11 +17,14 @@ class WinesController < ApplicationController
 
   # POST /wines
   def create
-    @wine = Wine.new(wine_params)
+    @wine = Wine.new(wine_params.except(:tastingData))
     @wine.user = @current_user
+    @tasting = Tasting.new(wine_params[:tastingData])
+    @wine.tastings << @tasting
+
 
     if @wine.save
-      render json: @wine, status: :created, location: @wine
+      render json: @wine, status: :created, include: :tastings
     else
       render json: @wine.errors, status: :unprocessable_entity
     end
@@ -49,6 +52,34 @@ class WinesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def wine_params
-      params.require(:wine).permit(:name)
+      params.require(:wine).permit(:name, :producer, :varietal, tastingData:[
+        :name,
+        :clarity,
+        :intensity_aromatics,
+        :color,
+        :observations,
+        :condition,
+        :intensity_palate,
+        :aromas_primary,
+        :aromas_secondary,
+        :aromas_tertiary,
+        :development,
+        :alcohol,
+        :sweetness,
+        :acidity,
+        :tannin,
+        :body,
+        :mousse,
+        :intensity_flavor,
+        :flavor_characteristics_primary,
+        :flavor_characteristics_secondary,
+        :flavor_characteristics_tertiary,
+        :finish,
+        :quality_level,
+        :ageing_potential,
+        
+      ]
+
+      )
     end
 end

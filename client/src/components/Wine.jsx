@@ -6,7 +6,7 @@ import '../assets/Wine.css';
 const Wine = (props) => {
     return (
         <>
-            <Link className="wine" to={`/wine/${props.id}`}>
+            <Link className="wine" to={`/wines/${props.id}`}>
                 <div className="wine-name">{props.name}</div>
             </Link>
         </>

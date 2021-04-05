@@ -52,7 +52,7 @@ export default function Wines(props) {
 
   const winesJSX = queriedWines.map((wine, index) => (
     <Wine
-      _id={wine._id}
+      id={wine.id}
       name={wine.name}
       key={index}
     />

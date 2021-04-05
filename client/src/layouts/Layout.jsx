@@ -15,17 +15,15 @@ export default function Layout(props) {
             src="https://res.cloudinary.com/dygk00sc0/image/upload/v1617323423/logo_trukob.png"
             alt="Drink Responsibly."
           />
-        </Link></div>
+        </Link>
+      </div>
       <div className="login-logic">
         {currentUser ? (
           <>
-            
             <div className="welcome-message">
-              <div>
-              Welcome, {currentUser.username}!
+              <div>Welcome, {currentUser.username}!</div>
+              <button onClick={handleLogout}>Logout</button>
             </div>
-            <button onClick={handleLogout}>Logout</button>
-          </div>
           </>
         ) : (
           <>
@@ -37,17 +35,14 @@ export default function Layout(props) {
             </Link>
             <Link to="/tastings">
               <div>Tasting Notes</div>
-              </Link>
-              <Link to="/login" className="fa fa-user-circle-o">
-                
-              </Link>
-              
+            </Link>
+            <Link to="/login" className="fa fa-user-circle-o"></Link>
           </>
         )}
 
         {currentUser && (
           <>
-                        <Link to="/about-us">
+            <Link to="/about-us">
               <div>About Us</div>
             </Link>
             <Link to="/wines">
@@ -55,22 +50,15 @@ export default function Layout(props) {
             </Link>
             <Link to="/tastings">
               <div>Tasting Notes</div>
-              </Link>
-            <Link to="/blog">
-              <div>Blog</div>
             </Link>
             <Link to="/users/:id/">
               <div>My Tasted Wines</div>
             </Link>
-            {/* <Link to="/check-out" className="fa fa-shopping-bag"></Link>
-            <Link to="/check-out" className="fa fa-cc-stripe"></Link> */}
           </>
         )}
       </div>
-        <hr/>
 
       {props.children}
-      <hr/>    
       <Footer />
     </div>
   );

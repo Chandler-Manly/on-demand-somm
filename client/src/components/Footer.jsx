@@ -1,17 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import "../assets/Footer.css";
 
 const Footer = () => (
   <footer>
     <div className="footer">
-      
-      <Link to="/"><img
-        src="https://res.cloudinary.com/dygk00sc0/image/upload/v1617323423/logo_trukob.png"
-        alt="Drink Responsibly."
-      /></Link>
-      <p>FOLLOW US:</p>
+      <div className="footer-items">
+      <p>FOLLOW ON-DEMAND SOMM</p>
       
       <a href="https://github.com/Chandler-Manly" className="fa fa-github">
         {/* Github */}
@@ -30,7 +25,8 @@ const Footer = () => (
         className="fa fa-facebook"
       >
         {/* Facebook */}
-        </a>
+        </a>        
+</div>
     </div>
   </footer>
 );

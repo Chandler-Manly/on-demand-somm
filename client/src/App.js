@@ -9,6 +9,7 @@ import MainContainer from "./containers/MainContainer";
 // component imports
 import Layout from "./layouts/Layout";
 import Login from "./screens/Login";
+import LogOut from "./components/LogOut";
 import Register from "./screens/Register";
 // import Landing from "./screens/Landing";
 // import BackgroundVideo from "./components/BackgroundVideo";
@@ -31,6 +32,8 @@ import AboutUs from "./assets/AboutUs";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
+  const clearUser = () => setCurrentUser(null);
+
   const history = useHistory();
 
   useEffect(() => {
@@ -66,13 +69,15 @@ function App() {
           <Route path="/login">
             <Login handleLogin={handleLogin} handleRegister={handleRegister}/>
           </Route>
+          <Route path="/logout">
+          <LogOut setCurrentUser={setCurrentUser} clearUser={clearUser} />
+        </Route>
           <Route path="/about-us">
             <AboutUs/>
           </Route>
           <Route path="/register">
-            <Register/>
+            <Register handleRegister={handleRegister}/>
           </Route>
-
           <Route path="/">
             <MainContainer currentUser={currentUser}/>
           </Route>

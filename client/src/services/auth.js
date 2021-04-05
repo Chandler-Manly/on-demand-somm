@@ -27,3 +27,13 @@ export const verifyUser = async () => {
 export const removeToken = () => {
   api.defaults.headers.common.authorization = null
 }
+
+
+export const logOut = async (user) => {
+  try {
+    localStorage.clear();
+    return true;
+  } catch (error) {
+    throw error;
+  }
+};

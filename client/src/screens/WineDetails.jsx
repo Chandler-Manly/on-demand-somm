@@ -26,14 +26,16 @@ export default function WineDetails(props) {
   const handleSubmit = async () => {
     const wineData = await addTasting(id, selectedTasting);
     setWineItem(wineData);
-    console.log(wineData)
   }
 
   return (
     <div>
       
-        <h3>Wine Details Page</h3>
+        <h1>Wine Details Page</h1>
       <h3>{wineItem?.name}</h3>
+      <h4>{wineItem?.producer}</h4>
+      <h5>{wineItem?.varietal}</h5>
+
       {wineItem?.tastings.map(tasting => (
         <p key={tasting.id}>
           <h1>{tasting.name}</h1>

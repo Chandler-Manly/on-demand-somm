@@ -22,7 +22,7 @@ class WineCards extends Component {
     const CARDS = this.state.wines.reverse().map((wine, index) =>
       index < 8 ?
         <WineCard
-        _id={wine._id}
+        id={wine.id}
         name={wine.name}
         key={index}
       /> : null

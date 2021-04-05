@@ -9,8 +9,7 @@ export default function Tastings(props) {
         tastings.map(tasting => (
           <>
             <p key={tasting.id}>
-              {tasting.name} 
-
+              {tasting.name}
               </p>
         </>
         ))

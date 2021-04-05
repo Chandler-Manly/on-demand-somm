@@ -46,8 +46,10 @@ export default function Login(props) {
           onChange={handleChange}
         />
       </label>
-      <br />
-      Not signed up yet?<Link to='/register'>Register</Link>
+          <br />
+          <br/>
+      Not signed up yet?<br />
+      <p>Setup your free account. <Link to='/register'>Register.</Link> </p>
       <button>Submit</button>
         </form>
         </div>

@@ -105,14 +105,14 @@ class MasterForm extends React.Component {
     if (this.state.currentStep === 3)
     {
       return(
-    <button className="submit-button" onClick={this.handleSubmit}>Submit</button>
+    <button className="submit-button" onClick={this.handleSubmit}>Submit Tasting</button>
     )}
   }
 
   render() {
     return (
       <React.Fragment>
-        <div className="form-header">Add Wine Here!</div>
+        <div className="form-header">Tasting Notes</div>
         <div className="step-count">Step {this.state.currentStep} of 3</div>
         <div className="submission-form">
           <form className="submission-form-template">

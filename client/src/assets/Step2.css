@@ -3,20 +3,17 @@
   flex-direction: column;
 }
 
-.create-price {
+.create-condition {
  margin-bottom: 20px;
- background-color: whitesmoke;
 }
 
-.create-link {
+.create-intensity-palate {
   margin-bottom: 20px;
-  background-color: whitesmoke;
 }
 
-.create-description {
+.create-aromas-primary {
   width: 500px;
   margin-bottom: 20px;
-  background-color: whitesmoke;
 }
 
 @media screen and (max-width: 375px){

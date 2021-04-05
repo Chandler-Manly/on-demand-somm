@@ -9,16 +9,19 @@
 .form-buttons {
   display: flex;
   justify-content: space-evenly;
+  padding-top: 40px;
 }
 
 .form-header{
   display: flex;
   justify-content: center;
+  padding-top:20px;
 }
 
 .step-count{
   display: flex;
   justify-content: center;
+  padding-top: 20px;
 }
 
 .next-button, .prev-secondary  {

@@ -15,7 +15,7 @@ function Step3(props) {
         onChange={props.handleChange}
         id="dropdown"
       >
-        <option selected={props.alcohol === ""} value="" disable selected>
+        <option selected={props.alcohol === ""} value="" defaultValue>
           Select alcohol level
         </option>
         <option selected={props.alcohol === "high"} value="high">
@@ -60,7 +60,7 @@ function Step3(props) {
         id="dropdown3"
       >
         <option selected={props.acidity === ""} value="" disable selected>
-          Select acidity
+          Select Acidity.
         </option>
         <option selected={props.acidity === "high"} value="high">
           High
@@ -122,7 +122,7 @@ function Step3(props) {
         id="dropdown6"
       >
         <option selected={props.mousse === ""} value="" disable selected>
-          Select mousse
+          Select mousse.
         </option>
         <option selected={props.mousse === "delicate"} value="delicate">
           delicate
@@ -148,7 +148,7 @@ function Step3(props) {
           disable
           selected
         >
-          Select intensity_flavor
+          Select intensity flavor.
         </option>
         <option
           selected={props.intensity_flavor === "pronounced"}

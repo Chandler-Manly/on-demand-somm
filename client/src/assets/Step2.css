@@ -5,28 +5,36 @@
 
 .create-condition {
  margin-bottom: 20px;
+ margin-top: 10px;
 }
 
 .create-intensity-palate {
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .create-aromas-primary {
   width: 500px;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .create-aromas_secondary {
-  width: 500px;
+  width: 600px;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .create-aromas_tertiary{
   width: 500px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .create-development{
   width: 500px;
+  margin-bottom: 20px;
+
 }
 
 @media screen and (max-width: 375px){

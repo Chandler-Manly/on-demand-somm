@@ -17,11 +17,14 @@ function Step1(props) {
         onChange={props.handleChange}
         autoFocus
         required
-        />
+      />
 
-        <h2>Appearance</h2>
+      <h2>Appearance</h2>
       <div className="create-clarity">
-        <label>Can you read your watch by looking through the glass? If so, the wine is clear.</label>
+        <label>
+          Can you read your watch by looking through the glass? If so, the wine
+          is clear.
+        </label>
         <select
           required
           className="create-clarity"
@@ -32,20 +35,23 @@ function Step1(props) {
           <option value="" disable selected>
             Select Clarity
           </option>
-          <option selected={props.clarity === "clear"} value="clear">
+          <option selected={props.clarity==="clear"} value="clear">
             Clear
           </option>
-          <option selected={props.clarity === "hazy"} value="hazy">
+          <option selected={props.clarity==="hazy"} value="hazy">
             Hazy
           </option>
-          <option selected={props.clarity === "faulty"} value="faulty">
+          <option selected={props.clarity==="faulty"} value="faulty">
             Faulty
           </option>
         </select>
       </div>
 
       <div className="create-intensity-aromatics">
-        <label>Pale like Edward Cullen from Twilight Saga? Or deep, vibrant colors like fresh fruit at the farmer's market?</label>
+        <label>
+          Pale like Edward Cullen from Twilight Saga? Or deep, vibrant colors
+          like fresh fruit at the farmer's market?
+        </label>
         <select
           required
           className="create-intensity-aromatics"
@@ -59,7 +65,10 @@ function Step1(props) {
           <option selected={props.intensity_aromatics === "deep"} value="deep">
             Deep
           </option>
-          <option selected={props.intensity_aromatics === "medium"} value="medium">
+          <option
+            selected={props.intensity_aromatics === "medium"}
+            value="medium"
+          >
             Medium
           </option>
           <option selected={props.intensity_aromatics === "pale"} value="pale">
@@ -69,7 +78,7 @@ function Step1(props) {
       </div>
 
       <div className="select-create-color">
-      <label>Red or white? Can we take it a step further?</label>
+        <label>Red or white? Can we take it a step further?</label>
 
         <select
           required
@@ -91,13 +100,13 @@ function Step1(props) {
             Garnet
           </option>
           <option selected={props.color === "lemon-green"} value="lemon-green">
-          Lemon-green
+            Lemon-green
           </option>
           <option selected={props.color === "lemon"} value="lemon">
-          Lemon
+            Lemon
           </option>
           <option selected={props.color === "gold"} value="gold">
-          Gold
+            Gold
           </option>
           <option selected={props.color === "amber"} value="amber">
             Amber
@@ -110,7 +119,9 @@ function Step1(props) {
           </option>
         </select>
       </div>
-      <label>Is there evidence of gas or sediment? How about tears? Staining?</label>
+      <label>
+        Is there evidence of gas or sediment? How about tears? Staining?
+      </label>
 
       <select
         required

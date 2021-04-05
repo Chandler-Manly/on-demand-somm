@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Wine from "../components/Wine";
-import Layout from "../layouts/Layout";
 import { getAllWines } from "../services/wines";
 
 const WinesofMine = (props) => {

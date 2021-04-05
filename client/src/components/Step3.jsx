@@ -6,8 +6,8 @@ function Step3(props) {
   }
   return (
     <div className="form-group-3">
-      <h2>Palate + Conclusion</h2>
-      <label>Fun fact: Greater than 14% ABV is considered High Alc</label>
+      <h2>Palate</h2>
+      <label>Is it boozy or balanced? Fun fact: Greater than 14% ABV is considered High Alc</label>
       <select
         className="create-alcohol"
         required
@@ -43,13 +43,23 @@ function Step3(props) {
         <option selected={props.sweetness === "luscious"} value="luscious">
           Luscious
         </option>
+        <option selected={props.sweetness === "sweet"} value="sweet">
+          Sweet
+        </option>
+        <option selected={props.sweetness === "medium-sweet"} value="medium-sweet">
+          Medium Sweet
+        </option>
         <option selected={props.sweetness === "medium-dry"} value="medium-dry">
-          Medium-dry
+          Medium
+        </option>
+        <option selected={props.sweetness === "off-dry"} value="off-dry">
+          Off dry
         </option>
         <option selected={props.sweetness === "dry"} value="dry">
           Dry
         </option>
       </select>
+
       <label>Acidity -- PH levels</label>
 
       <select
@@ -65,13 +75,20 @@ function Step3(props) {
         <option selected={props.acidity === "high"} value="high">
           High
         </option>
+        <option selected={props.acidity === "medium+"} value="medium+">
+          Medium+
+        </option>
         <option selected={props.acidity === "medium"} value="medium">
           Medium
+        </option>
+        <option selected={props.acidity === "medium-"} value="medium-">
+          Medium-
         </option>
         <option selected={props.acidity === "low"} value="low">
           Low
         </option>
       </select>
+      <label>Grippy tannins or non-existent?</label>
 
       <select
         className="create-tannin"
@@ -86,14 +103,21 @@ function Step3(props) {
         <option selected={props.tannin === "high"} value="high">
           High
         </option>
+        <option selected={props.tannin === "medium+"} value="medium+">
+          Medium+
+        </option>
+
         <option selected={props.tannin === "medium"} value="medium">
           Medium
+        </option>
+        <option selected={props.tannin === "medium-"} value="medium-">
+          Medium-
         </option>
         <option selected={props.tannin === "low"} value="low">
           Low
         </option>
       </select>
-      
+      <label>Whole milk vs Skim milk?</label>
       <select
         className="create-body"
         required
@@ -104,16 +128,26 @@ function Step3(props) {
         <option selected={props.body === ""} value="" disable selected>
           Select body
         </option>
-        <option selected={props.body === "full"} value="high">
-          high
+        <option selected={props.body === "full"} value="full">
+          Full
         </option>
+        <option selected={props.body === "medium+"} value="medium+">
+          Medium+
+        </option>
+
         <option selected={props.body === "medium"} value="medium">
-          medium
+          Medium
         </option>
+        <option selected={props.body === "medium-"} value="medium-">
+          Medium-
+        </option>
+
         <option selected={props.body === "light"} value="low">
-          low
+          Low
         </option>
       </select>
+
+      <label>Let's talk texture</label>
       <select
         className="create-mousse"
         required
@@ -135,6 +169,7 @@ function Step3(props) {
         </option>
       </select>
 
+      <label>Flavor intensity</label>
       <select
         className="create-intensity_flavor"
         required
@@ -163,6 +198,7 @@ function Step3(props) {
           Low
         </option>
       </select>
+      <label>Primary fruit characteristics</label>
       <select
         className="create-flavor_characteristics_primary"
         required
@@ -179,24 +215,76 @@ function Step3(props) {
           Select flavor characteristics primary.
         </option>
         <option
+          selected={props.flavor_characteristics_primary === "floral"}
+          value="floral"
+        >
+          Floral
+        </option>
+        <option
+          selected={props.flavor_characteristics_primary === "green-fruit"}
+          value="green-fruit"
+        >
+          Green fruit (gooseberry, apple, pear)
+        </option>
+        <option
+          selected={props.flavor_characteristics_primary === "citrus-fruit"}
+          value="citrus-fruit"
+        >
+          Citrus fruit (grapefruit, lemon, lime)
+        </option>
+        <option
+          selected={props.flavor_characteristics_primary === "stone-fruit"}
+          value="stone-fruit"
+        >
+          Stone fruit
+        </option>
+        <option
+          selected={props.flavor_characteristics_primary === "tropical-fruit"}
+          value="tropical-fruit"
+        >
+          Tropical fruit
+        </option>
+        <option
           selected={props.flavor_characteristics_primary === "red-fruit"}
           value="red-fruit"
         >
-          Red-fruit
-        </option>
-        <option
-          selected={props.flavor_characteristics_primary === "blue-fruit"}
-          value="blue-fruit"
-        >
-          Blue-fruit
+          Red fruit
         </option>
         <option
           selected={props.flavor_characteristics_primary === "black-fruit"}
           value="black-fruit"
         >
-          Black-fruit
+          Black fruit
+        </option>
+        <option
+          selected={props.flavor_characteristics_primary === "dried-cooked-fruit"}
+          value="dried-cooked-fruit"
+        >
+Dried cooked fruit
+        </option>
+
+        <option
+          selected={props.flavor_characteristics_primary === "herbaceous"}
+          value="herbaceous"
+        >
+          Herbaceous
+        </option>
+        <option
+          selected={props.flavor_characteristics_primary === "herbal"}
+          value="herbal"
+        >
+          Herbal
+        </option>
+        <option
+          selected={props.flavor_characteristics_primary === "pungent-spice"}
+          value="pungent-spice"
+        >
+          Pungent spice (black/white pepper, liquorice)
         </option>
       </select>
+
+      <label>Secondary fruit characteristics</label>
+
       <select
         className="create-flavor_characteristics_secondary"
         required
@@ -231,6 +319,8 @@ function Step3(props) {
           Oak
         </option>
       </select>
+      <label>Tertiary fruit characteristics</label>
+
       <select
         className="create-flavor_characteristics_tertiary"
         required
@@ -261,6 +351,7 @@ function Step3(props) {
           Fruit development
         </option>
       </select>
+      <label>Ready, set, go! Start clocking the finish...</label>
       <select
         className="create-finish"
         required
@@ -269,7 +360,7 @@ function Step3(props) {
         id="dropdown11"
       >
         <option selected={props.finish === ""} value="" disable selected>
-          Select Finish.
+          Select Finish
         </option>
         <option selected={props.finish === "short"} value="short">
           Short
@@ -281,6 +372,8 @@ function Step3(props) {
           Long
         </option>
       </select>
+      <h3>Conclusion</h3>
+      <label>Quality level *PRO-TIP: Price does not necessarily correlate with quality.</label>
       <select
         className="create-quality_level"
         required
@@ -307,6 +400,8 @@ function Step3(props) {
           Outstanding
         </option>
       </select>
+      <label>Ageing potential</label>
+
       <select
         className="create-ageing_potential"
         required

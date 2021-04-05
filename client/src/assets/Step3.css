@@ -1,20 +1,71 @@
-.create-image-address {
+.create-alcohol {
   margin-bottom: 20px;
   width: 500px;
-  background-color: whitesmoke;
+  margin-top: 20px;
 }
 
-.create-animal-type{
+.create-sweetness {
   margin-bottom: 20px;
   width: 200px;
   
 }
 
+.create-acidity {
+  margin-bottom: 20px;
+  width: 200px;
+  
+}
+
+.create-tannin {
+  margin-bottom: 20px;
+  width: 200px;
+  
+}
+
+.create-mousse {
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.create-intensity_flavor{
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+
+.create-body {
+  margin-bottom: 20px;
+  width: 500px;
+  
+}
+
+.create-flavor_characteristics_primary{
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+.create-flavor_characteristics_secondary{
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+.create-flavor_characteristics_tertiary{
+  margin-bottom: 20px;
+  width: 500px;
+}
+.create-finish{
+  margin-bottom: 20px;
+  width: 500px;
+}
 .form-control{
   justify-content: center;
   padding-top: 10px;
 }
+.create-quality_level{
+  margin-bottom: 20px;
+  width: 500px;
 
+}
 .form-group-3 {
   display: flex;
   flex-direction: column;

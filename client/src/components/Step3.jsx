@@ -13,7 +13,7 @@ function Step3(props) {
         required
         name="alcohol"
         onChange={props.handleChange}
-        id="dropdown"
+        id="alcohol"
       >
         <option selected={props.alcohol === ""} value="" defaultValue>
           Select alcohol level
@@ -35,7 +35,7 @@ function Step3(props) {
         required
         name="sweetness"
         onChange={props.handleChange}
-        id="dropdown2"
+        id="sweetness"
       >
         <option selected={props.sweetness === ""} value="" disable selected>
           Select sweetness
@@ -67,7 +67,7 @@ function Step3(props) {
         required
         name="acidity"
         onChange={props.handleChange}
-        id="dropdown3"
+        id="acidity"
       >
         <option selected={props.acidity === ""} value="" disable selected>
           Select Acidity.
@@ -95,7 +95,7 @@ function Step3(props) {
         required
         name="tannin"
         onChange={props.handleChange}
-        id="dropdown4"
+        id="tannin"
       >
         <option selected={props.tannin === ""} value="" disable selected>
           Select tannin
@@ -123,7 +123,7 @@ function Step3(props) {
         required
         name="body"
         onChange={props.handleChange}
-        id="dropdown5"
+        id="body"
       >
         <option selected={props.body === ""} value="" disable selected>
           Select body
@@ -153,19 +153,22 @@ function Step3(props) {
         required
         name="mousse"
         onChange={props.handleChange}
-        id="dropdown6"
+        id="mousse"
       >
         <option selected={props.mousse === ""} value="" disable selected>
           Select mousse.
         </option>
         <option selected={props.mousse === "delicate"} value="delicate">
-          delicate
+          Delicate
         </option>
         <option selected={props.mousse === "creamy"} value="creamy">
-          creamy
+          Creamy
         </option>
         <option selected={props.mousse === "aggressive"} value="aggressive">
-          aggressive
+          Aggressive
+        </option>
+        <option selected={props.mousse === "na"} value="na">
+          NA
         </option>
       </select>
 
@@ -175,7 +178,7 @@ function Step3(props) {
         required
         name="intensity_flavor"
         onChange={props.handleChange}
-        id="dropdown7"
+        id="intensity_flavor"
       >
         <option
           selected={props.intensity_flavor === ""}
@@ -204,7 +207,7 @@ function Step3(props) {
         required
         name="flavor_characteristics_primary"
         onChange={props.handleChange}
-        id="dropdown8"
+        id="flavor_characteristics_primary"
       >
         <option
           selected={props.flavor_characteristics_primary === ""}
@@ -290,7 +293,7 @@ Dried cooked fruit
         required
         name="flavor_characteristics_secondary"
         onChange={props.handleChange}
-        id="dropdown9"
+        id="flavor_characteristics_secondary"
       >
         <option
           selected={props.flavor_characteristics_secondary === ""}
@@ -318,6 +321,12 @@ Dried cooked fruit
         >
           Oak
         </option>
+        <option
+          selected={props.flavor_characteristics_secondary === "na"}
+          value="na"
+        >
+          NA
+        </option>
       </select>
       <label>Tertiary fruit characteristics</label>
 
@@ -326,7 +335,7 @@ Dried cooked fruit
         required
         name="flavor_characteristics_tertiary"
         onChange={props.handleChange}
-        id="dropdown10"
+        id="flavor_characteristics_tertiary"
       >
         <option
           selected={props.flavor_characteristics_tertiary === ""}
@@ -357,7 +366,7 @@ Dried cooked fruit
         required
         name="finish"
         onChange={props.handleChange}
-        id="dropdown11"
+        id="finish"
       >
         <option selected={props.finish === ""} value="" disable selected>
           Select Finish
@@ -379,7 +388,7 @@ Dried cooked fruit
         required
         name="quality_level"
         onChange={props.handleChange}
-        id="dropdown12"
+        id="quality_level"
       >
         <option selected={props.quality_level === ""} value="" disable selected>
           Select quality level.
@@ -405,9 +414,9 @@ Dried cooked fruit
       <select
         className="create-ageing_potential"
         required
-        name="flavor_characteristics_secondary"
+        name="ageing_potential"
         onChange={props.handleChange}
-        id="dropdown13"
+        id="ageing_potential"
       >
         <option
           selected={props.ageing_potential === ""}

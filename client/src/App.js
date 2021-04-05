@@ -75,7 +75,6 @@ function App() {
 
           <Route path="/">
             <MainContainer currentUser={currentUser}/>
-
           </Route>
         </Switch>
     </div>

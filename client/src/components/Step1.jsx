@@ -27,10 +27,10 @@ function Step1(props) {
         </label>
         <select
           required
-          className="create-clarity"
-          name="create-clarity"
+          className="clarity"
+          name="clarity"
           onChange={props.handleChange}
-          id="dropdown"
+          id="clarity"
         >
           <option value="" disable selected>
             Select Clarity
@@ -55,23 +55,27 @@ function Step1(props) {
         <select
           required
           className="create-intensity-aromatics"
-          name="create-intensity-aromatics"
+          name="intensity_aromatics"
           onChange={props.handleChange}
-          id="dropdown"
+          id="intensity_aromatics"
         >
           <option value="" disable selected>
             Select color intensity.
           </option>
-          <option selected={props.intensity_aromatics === "deep"} value="deep">
+          <option
+            selected={props.intensity_aromatics==="deep"}
+            value="deep">
             Deep
           </option>
           <option
-            selected={props.intensity_aromatics === "medium"}
+            selected={props.intensity_aromatics==="medium"}
             value="medium"
           >
             Medium
           </option>
-          <option selected={props.intensity_aromatics === "pale"} value="pale">
+          <option
+            selected={props.intensity_aromatics === "pale"}
+            value="pale">
             Pale
           </option>
         </select>
@@ -82,39 +86,39 @@ function Step1(props) {
 
         <select
           required
-          className="create-color"
+          className="color"
           name="color"
           onChange={props.handleChange}
-          id="dropdown"
+          id="color"
         >
           <option value="" disable selected>
             Select Color
           </option>
-          <option selected={props.color === "salmon"} value="salmon">
+          <option selected={props.color==="salmon"} value="salmon">
             Salmon
           </option>
-          <option selected={props.color === "pink"} value="pink">
+          <option selected={props.color==="pink"} value="pink">
             Pink
           </option>
-          <option selected={props.color === "garnet"} value="garnet">
+          <option selected={props.color==="garnet"} value="garnet">
             Garnet
           </option>
-          <option selected={props.color === "lemon-green"} value="lemon-green">
+          <option selected={props.color==="lemon-green"} value="lemon-green">
             Lemon-green
           </option>
-          <option selected={props.color === "lemon"} value="lemon">
+          <option selected={props.color==="lemon"} value="lemon">
             Lemon
           </option>
-          <option selected={props.color === "gold"} value="gold">
+          <option selected={props.color==="gold"} value="gold">
             Gold
           </option>
-          <option selected={props.color === "amber"} value="amber">
+          <option selected={props.color==="amber"} value="amber">
             Amber
           </option>
-          <option selected={props.color === "brown"} value="brown">
+          <option selected={props.color==="brown"} value="brown">
             Brown
           </option>
-          <option selected={props.color === "purple"} value="purple">
+          <option selected={props.color==="purple"} value="purple">
             Purple
           </option>
         </select>

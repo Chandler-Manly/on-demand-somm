@@ -15,9 +15,9 @@ function Step2(props) {
         <select
           required
           className="create-condition"
-          name="create-condition"
+          name="condition"
           onChange={props.handleChange}
-          id="dropdown"
+          id="condition"
         >
           <option value="" disable selected>
             Select condition
@@ -36,9 +36,9 @@ function Step2(props) {
         <select
           required
           className="create-intensity-palate"
-          name="create-intensity-palate"
+          name="intensity_palate"
           onChange={props.handleChange}
-          id="dropdown"
+          id="intensity_palate"
         >
           <option value="" disable selected>
             Select aromatic intensity
@@ -66,9 +66,9 @@ function Step2(props) {
         <select
           required
           className="create-aromas-primary"
-          name="create-aromas-primary"
+          name="aromas_primary"
           onChange={props.handleChange}
-          id="dropdown"
+          id="aromas_primary"
         >
           <option value="" disable selected>
             Select primary aromas
@@ -152,9 +152,9 @@ function Step2(props) {
         <select
           required
           className="create-aromas_secondary"
-          name="create-aromas_secondary"
+          name="aromas_secondary"
           onChange={props.handleChange}
-          id="dropdown"
+          id="aromas_secondary"
         >
           <option value="" disable selected>
             Select secondary aromatics
@@ -178,10 +178,10 @@ function Step2(props) {
         <label>Alright, Sherlock -- Any tertiary aromas present? </label><br/>
         <select
           required
-          className="create-aromas_tertiary"
-          name="create-aromas_tertiary"
+          className="aromas_tertiary"
+          name="aromas_tertiary"
           onChange={props.handleChange}
-          id="dropdown"
+          id="aromas_tertiary"
         >
           <option value="" disable selected>
             Select tertiary aromatics
@@ -219,9 +219,9 @@ function Step2(props) {
         <select
           required
           className="create-development"
-          name="create-development"
+          name="development"
           onChange={props.handleChange}
-          id="dropdown"
+          id="development"
         >
           <option value="" disable selected>
             Select development

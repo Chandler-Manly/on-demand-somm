@@ -1,4 +1,4 @@
-import './Step2.css'
+import '../assets/Step2.css'
 
 
 function Step2(props) {

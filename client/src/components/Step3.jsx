@@ -1,4 +1,4 @@
-import "./Step3.css";
+import "../assets/Step3.css";
 
 function Step3(props) {
   if (props.currentStep !== 3) {
@@ -7,17 +7,29 @@ function Step3(props) {
   return (
     <div className="form-group-3">
       <h2>Palate + Conclusion</h2>
-      <input
+      <label>Fun fact: Greater than 14% ABV is considered High Alc</label>
+      <select
         className="create-alcohol"
-        id="alcohol"
-        name="alcohol"
-        type="text"
-        placeholder="Enter alcohol"
-        value={props.alcohol}
-        onChange={props.handleChange}
         required
-      />
-
+        name="alcohol"
+        onChange={props.handleChange}
+        id="dropdown"
+      >
+        <option selected={props.alcohol === ""} value="" disable selected>
+          Select alcohol level
+        </option>
+        <option selected={props.alcohol === "high"} value="high">
+        High
+        </option>
+        <option selected={props.alcohol === "medium"} value="medium">
+          Medium
+        </option>
+        <option selected={props.alcohol === "low"} value="low">
+          Low
+        </option>
+      </select>
+      
+<input>Any residual sugar --</input>
       <select
         className="create-sweetness"
         required
@@ -29,15 +41,16 @@ function Step3(props) {
           Select sweetness
         </option>
         <option selected={props.sweetness === "luscious"} value="luscious">
-          luscious
+          Luscious
         </option>
         <option selected={props.sweetness === "medium-dry"} value="medium-dry">
-          medium-dry
+          Medium-dry
         </option>
         <option selected={props.sweetness === "dry"} value="dry">
-          dry
+          Dry
         </option>
       </select>
+      <input>Acidity -- PH levels</input>
 
       <select
         className="create-acidity"
@@ -50,13 +63,13 @@ function Step3(props) {
           Select acidity
         </option>
         <option selected={props.acidity === "high"} value="high">
-          high
+          High
         </option>
         <option selected={props.acidity === "medium"} value="medium">
-          medium
+          Medium
         </option>
         <option selected={props.acidity === "low"} value="low">
-          low
+          Low
         </option>
       </select>
 
@@ -71,15 +84,16 @@ function Step3(props) {
           Select tannin
         </option>
         <option selected={props.tannin === "high"} value="high">
-          high
+          High
         </option>
         <option selected={props.tannin === "medium"} value="medium">
-          medium
+          Medium
         </option>
         <option selected={props.tannin === "low"} value="low">
-          low
+          Low
         </option>
       </select>
+      
       <select
         className="create-body"
         required
@@ -162,7 +176,7 @@ function Step3(props) {
           disable
           selected
         >
-          Select flavor_characteristics_primary
+          Select flavor characteristics primary.
         </option>
         <option
           selected={props.flavor_characteristics_primary === "red-fruit"}
@@ -196,13 +210,13 @@ function Step3(props) {
           disable
           selected
         >
-          Select flavor_characteristics_secondary
+          Select flavor characteristics secondary.
         </option>
         <option
           selected={props.flavor_characteristics_secondary === "yeast"}
           value="yeast"
         >
-          yeast
+          Yeast
         </option>
         <option
           selected={props.flavor_characteristics_secondary === "MLF"}
@@ -214,7 +228,7 @@ function Step3(props) {
           selected={props.flavor_characteristics_secondary === "oak"}
           value="oak"
         >
-          oak
+          Oak
         </option>
       </select>
       <select
@@ -255,16 +269,16 @@ function Step3(props) {
         id="dropdown11"
       >
         <option selected={props.finish === ""} value="" disable selected>
-          Select finish
+          Select Finish.
         </option>
         <option selected={props.finish === "short"} value="short">
-          short
+          Short
         </option>
         <option selected={props.finish === "medium"} value="medium">
-          medium
+          Medium
         </option>
         <option selected={props.finish === "long"} value="fruit">
-          long
+          Long
         </option>
       </select>
       <select
@@ -275,22 +289,22 @@ function Step3(props) {
         id="dropdown12"
       >
         <option selected={props.quality_level === ""} value="" disable selected>
-          Select quality_level
+          Select quality level.
         </option>
         <option selected={props.quality_level === "poor"} value="poor">
-          poor
+          Poor
         </option>
         <option
           selected={props.quality_level === "acceptable"}
           value="acceptable"
         >
-          acceptable
+          Acceptable
         </option>
         <option
           selected={props.quality_level === "outstanding"}
           value="outstanding"
         >
-          outstanding
+          Outstanding
         </option>
       </select>
       <select
@@ -312,7 +326,7 @@ function Step3(props) {
           selected={props.ageing_potential === "too-young"}
           value="too-young"
         >
-          too-young
+          Too young. 
         </option>
         <option selected={props.ageing_potential === "can-drink-now-but-has-potential-for-ageing"} value="can-drink-now-but-has-potential-for-ageing">
           Can drink now. But has potential for ageing.
@@ -321,7 +335,7 @@ function Step3(props) {
         Drink now. Not suitable for ageing or further ageing.
         </option>
         <option selected={props.ageing_potential === "too-old"} value="too-old">
-          too-old
+          Too old.
         </option>
       </select>
     </div>

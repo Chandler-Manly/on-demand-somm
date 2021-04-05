@@ -2,9 +2,11 @@ import React from "react";
 import Step1 from "./Step1";
 import Step2 from "./Step2";
 import Step3 from "./Step3";
+import Step4 from "./Step4";
+
 import "../assets/Parent.css";
 import { postWine } from "../services/wines";
-import { withRouter } from 'react-router-dom';
+import { withRouter } from "react-router-dom";
 
 class MasterForm extends React.Component {
   constructor(props) {
@@ -48,12 +50,13 @@ class MasterForm extends React.Component {
     event.preventDefault();
     await postWine(this.state, this.props.user.id);
     const { history } = this.props;
-    if(history) history.push('/wines')
+    if (history) history.push("/wines");
   };
 
   _next = () => {
     let currentStep = this.state.currentStep;
-    currentStep = currentStep >= 2 ? 3 : currentStep + 1;
+    // currentStep = currentStep >= 2 ? 4 : currentStep + 1;
+    currentStep = currentStep + 1;
     this.setState({
       currentStep: currentStep,
     });
@@ -81,7 +84,7 @@ class MasterForm extends React.Component {
 
   nextButton() {
     let currentStep = this.state.currentStep;
-    if (currentStep < 3) {
+    if (currentStep < 4) {
       return (
         <button className="next-button" type="button" onClick={this._next}>
           Next
@@ -93,32 +96,29 @@ class MasterForm extends React.Component {
 
   _submit = () => {
     let currentStep = this.state.currentStep;
-    currentStep = currentStep === 3;
+    currentStep = currentStep === 4;
     this.setState({
       currentStep: currentStep,
     });
   };
 
   submitButton() {
-    if (this.state.currentStep === 3)
-    {
-      return(
-    <button className="submit-button" onClick={this.handleSubmit}>Submit</button>
-    )}
+    if (this.state.currentStep === 4) {
+      return (
+        <button className="submit-button" onClick={this.handleSubmit}>
+          Submit
+        </button>
+      );
+    }
   }
 
-  
-
   render() {
-
     return (
       <React.Fragment>
         <div className="form-header">Add Wine Here!</div>
-        <div className="step-count">Step {this.state.currentStep} of 3</div>
+        <div className="step-count">Step {this.state.currentStep} of 4</div>
         <div className="submission-form">
-          <form
-            className="submission-form-template"
-          >
+          <form className="submission-form-template">
             <Step1
               currentStep={this.state.currentStep}
               handleChange={this.handleChange}
@@ -148,13 +148,22 @@ class MasterForm extends React.Component {
               body={this.state.body}
               mousse={this.state.mousse}
               intensity_flavor={this.state.intensity_flavor}
-              flavor_characteristics_primary={this.state.flavor_characteristics_primary}
-              flavor_characteristics_secondary={this.state.flavor_characteristics_secondary}
-              flavor_characteristics_tertiary={this.state.flavor_characteristics_tertiary}
+              flavor_characteristics_primary={
+                this.state.flavor_characteristics_primary
+              }
+              flavor_characteristics_secondary={
+                this.state.flavor_characteristics_secondary
+              }
+              flavor_characteristics_tertiary={
+                this.state.flavor_characteristics_tertiary
+              }
               finish={this.state.finish}
+            />
+            <Step4
+              currentStep={this.state.currentStep}
+              handleChange={this.handleChange}
               quality_level={this.state.quality_level}
               ageing_potential={this.state.ageing_potential}
-
             />
             <div className="form-buttons">
               {this.previousButton()}

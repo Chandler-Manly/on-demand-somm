@@ -1,5 +1,5 @@
 import React from "react";
-import "./Step1.css";
+import "../assets/Step1.css";
 
 function Step1(props) {
   if (props.currentStep !== 1) {
@@ -7,7 +7,7 @@ function Step1(props) {
   }
   return (
     <div className="form-group-1">
-      <h2>Appearance</h2>
+      <label>Name:</label>
       <input
         className="create-name"
         id="name"
@@ -18,19 +18,29 @@ function Step1(props) {
         onChange={props.handleChange}
         autoFocus
         required
-      />
-      <input
-        className="create-clarity"
-        id="clarity"
-        name="clarity"
-        type="text"
-        placeholder="Enter clarity"
-        value={props.clarity}
-        onChange={props.handleChange}
-        required
-        // save to local storage after each step
+        />
 
-      />
+        <h2>Appearance</h2>
+      <div className="create-clarity">
+        <select
+          required
+          className="create-clarity"
+          name="create-clarity"
+          onChange={props.handleChange}
+          id="dropdown"
+        >
+          <option value="" disable selected>
+            Select Clarity
+          </option>
+          <option selected={props.clarity === "clear"} value="clear">
+            Clear
+          </option>
+          <option selected={props.clarity === "hazy"} value="hazy">
+            Hazy
+          </option>
+        </select>
+      </div>
+
       <input
         className="create-intensity-aromatics"
         id="intensity_aromatics"
@@ -41,20 +51,45 @@ function Step1(props) {
         onChange={props.handleChange}
         required
       />
+
       <div className="select-create-color">
-      <select
-        required
-        className="create-color"
-        name="color"
-        onChange={props.handleChange}
-          id="dropdown"          
-      >
-        <option value="" disable selected>
-          Select color
-        </option>
-        <option selected={props.color==="salmon"} value="salmon">salmon</option>
-        <option selected={props.color==="brick"} value="brick">brick</option>
-        <option selected={props.color==="garnet"} value="garnet">garnet</option>
+        <select
+          required
+          className="create-color"
+          name="color"
+          onChange={props.handleChange}
+          id="dropdown"
+        >
+          <option value="" disable selected>
+            Select Color
+          </option>
+          <option selected={props.color === "salmon"} value="salmon">
+            Salmon
+          </option>
+          <option selected={props.color === "pink"} value="pink">
+            Pink
+          </option>
+          <option selected={props.color === "garnet"} value="garnet">
+            Garnet
+          </option>
+          <option selected={props.color === "garnet"} value="garnet">
+            garnet
+          </option>
+          <option selected={props.color === "garnet"} value="garnet">
+            garnet
+          </option>
+          <option selected={props.color === "garnet"} value="garnet">
+            garnet
+          </option>
+          <option selected={props.color === "garnet"} value="garnet">
+            garnet
+          </option>
+          <option selected={props.color === "garnet"} value="garnet">
+            garnet
+          </option>
+          <option selected={props.color === "garnet"} value="garnet">
+            garnet
+          </option>
         </select>
       </div>
       <select
@@ -62,15 +97,21 @@ function Step1(props) {
         className="create-observations"
         name="observations"
         onChange={props.handleChange}
-          id="dropdown"          
+        id="dropdown"
       >
         <option value="" disable selected>
           Select observations
         </option>
-        <option selected={props.observations==="tears"} value="tears">tears</option>
-        <option selected={props.observations==="bubbles"} value="bubbles">bubbles</option>
-        <option selected={props.observations==="deposits"} value="deposits">deposits</option>
-        </select>
+        <option selected={props.observations === "tears"} value="tears">
+          tears
+        </option>
+        <option selected={props.observations === "bubbles"} value="bubbles">
+          bubbles
+        </option>
+        <option selected={props.observations === "deposits"} value="deposits">
+          deposits
+        </option>
+      </select>
     </div>
   );
 }

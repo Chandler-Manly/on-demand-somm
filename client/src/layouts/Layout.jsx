@@ -33,9 +33,6 @@ export default function Layout(props) {
             <Link to="/wines">
               <div>All Wine List</div>
             </Link>
-            {/* <Link to="/tastings">
-              <div>Tasting Notes</div>
-            </Link> */}
             <Link to="/login" className="fa fa-user-circle-o"></Link>
           </>
         )}

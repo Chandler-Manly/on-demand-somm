@@ -85,7 +85,6 @@ const Register = (props) => {
         <div className="register-fields">
           <form onSubmit={onRegister}>
             <div className="register-input-container">
-              <h5 className="register-subhead">Set up your free account here!</h5>
               <input
                 className="individual-register-input"
                 required

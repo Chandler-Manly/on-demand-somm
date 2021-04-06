@@ -1,3 +1,17 @@
+.background-video-two-container{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.video-header {
+  display: flex;
+  justify-content: center;
+}
+
 .background-video-two {
+  display: flex;
+  justify-content: center;
+
   opacity: 0.8;
 }

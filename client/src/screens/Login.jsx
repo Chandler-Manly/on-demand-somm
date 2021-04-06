@@ -49,7 +49,7 @@ export default function Login(props) {
           <br />
           <br/>
       Not signed up yet?<br />
-      <p>Setup your free account. <Link to='/register'>Register.</Link> </p>
+      <Link to='/register'>Register.</Link>
       <button>Submit</button>
         </form>
         </div>

@@ -11,8 +11,6 @@ import Layout from "./layouts/Layout";
 import Login from "./screens/Login";
 import LogOut from "./components/LogOut";
 import Register from "./screens/Register";
-// import Landing from "./screens/Landing";
-// import BackgroundVideo from "./components/BackgroundVideo";
 
 // import CarouselOne from "./components/CarouselOne";
 // import CarouselTwo from "./components/CarouselTwo";
@@ -79,7 +77,8 @@ function App() {
             <Register handleRegister={handleRegister}/>
           </Route>
           <Route path="/">
-            <MainContainer currentUser={currentUser}/>
+            <MainContainer currentUser={currentUser} />
+            
           </Route>
         </Switch>
     </div>

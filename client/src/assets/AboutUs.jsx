@@ -12,14 +12,14 @@ export default function AboutUs() {
         <div className="about-us-text">
           ON-DEMAND-SOMM is a platform for wine novices and aficionados to
           aggregate their tasting notes. Our team saw an opportunity to simplify
-          and improve this critical part of the wine education process.
+          and improve this critical part of wine education.
           
         </div>
 
         <div className="about-us-wset">
           This comprehensive guide follows the Wine Spirit Education Trust's Systematic
           Approach to Tasting with some helpful tips and tricks to guide you
-          through the wine evaluation.
+          through the wine evaluation process.
         </div>
 
 

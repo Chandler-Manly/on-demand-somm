@@ -49,7 +49,7 @@ const Register = (props) => {
             password: "",
             passwordConfirmation: "",
             isError: true,
-            errorMsg: "Sign Up Details Invalid",
+            errorMsg: "should be good to go to refresh and login",
           });
         });
     }

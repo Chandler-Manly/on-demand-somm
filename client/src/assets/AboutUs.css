@@ -32,3 +32,81 @@
   font-family: "Covered By Your Grace", cursive;
   font-size: 75px;
 }
+
+@media screen and (max-width: 1024) {
+  .about-us {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    margin-left: 400px;
+    margin-right: 400px;
+    background-color: blueviolet;
+  }
+  
+  .about-us-text {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  
+  .about-us-wset {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+  
+  .background-video-two {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+  }
+  .about-us-header {
+    display: flex;
+    justify-content: center;
+    font-family: "Covered By Your Grace", cursive;
+    font-size: 75px;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .about-us {
+    max-width: 360px;
+    background-color: aquamarine;
+  }
+  
+  
+  .about-us-text {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    max-width: 360px;
+
+  }
+  
+  .about-us-wset {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    background-color: aquamarine;
+    max-width: 360px;
+
+  }
+  
+  .background-video-two {
+    display: flex;
+    justify-content: center;
+    max-width: 360px;
+  }
+  .about-us-header {
+    display: flex;
+    justify-content: center;
+    font-family: "Covered By Your Grace", cursive;
+    font-size: 50px;
+    max-width: 360px;
+
+  }
+}

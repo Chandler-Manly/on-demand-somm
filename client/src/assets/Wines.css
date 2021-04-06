@@ -19,3 +19,12 @@
     justify-content: space-around;
   }
 }
+
+
+@media (max-width: 375) {
+  .wines {
+    width: 100%;
+    justify-content: space-around;
+    background-color: aquamarine;
+  }
+}

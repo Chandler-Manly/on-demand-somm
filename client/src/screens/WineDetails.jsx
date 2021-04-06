@@ -38,7 +38,7 @@ export default function WineDetails(props) {
       <h5>{wineItem?.varietal}</h5>
 
       {wineItem?.tastings.map(tasting => (
-        <p key={tasting.id}>
+        <div key={tasting.id}>
           <h1>{tasting.name}</h1>
           <h3>Appearance</h3>
           Clarity: {tasting.clarity}<br/>
@@ -71,7 +71,7 @@ export default function WineDetails(props) {
           Quality Level: {tasting.quality_level}<br/>
           Ageing Potential: {tasting.ageing_potential}
         
-        </p>
+        </div>
       ))}
       <form onSubmit={(e) => {
         e.preventDefault()

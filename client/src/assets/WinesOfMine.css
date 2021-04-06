@@ -14,3 +14,45 @@ padding-top:-20px;
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 1024px) {
+  .user-wines-heading{
+    display: flex;
+    justify-content: center;
+    font-family: "Covered By Your Grace", cursive;
+    font-size: 50px;
+    margin-left: 20px;
+  }
+  
+  .wines{
+  padding-top:-20px;
+  
+  }
+  
+  .user-wine-container{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 375) {
+  .user-wines-heading{
+    display: flex;
+    justify-content: center;
+    font-family: "Covered By Your Grace", cursive;
+    font-size: 40px;
+    margin-left: 20px;
+
+  }
+  
+  .wines{
+  padding-top:-20px;
+  
+  }
+  
+  .user-wine-container{
+    display: flex;
+    justify-content: center;
+  }
+}

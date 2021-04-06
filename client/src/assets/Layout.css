@@ -25,3 +25,40 @@ header {
   justify-content: space-around;
   padding-bottom: 100px;
 }
+
+@media screen and (max-width: 375px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    color: rgb(245, 237, 237);
+    font-weight: 600;
+    padding-bottom: 10px;
+    background-image: linear-gradient(180deg, pink, blueviolet);
+    max-width: 375px;
+  }
+  
+  .company-values {
+    display: flex;
+    background-image: linear-gradient(180deg, blue, blueviolet);
+    color: whitesmoke;
+    font-weight: 600;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 375px;
+
+  }
+  
+  .company-logo {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .login-logic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+    margin-left: 20px;
+  }
+}

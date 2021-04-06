@@ -71,11 +71,11 @@ export default function Wines(props) {
           <React.Fragment key={wine.id}>
             <Link to={`/wines/${wine.id}`}>
               <p>{wine.name}</p>
-              <p>{wine.producer}</p>
             </Link>
             {currentUser?.id === wine.user_id && (
               <>
                 <Link to={`/wines/${wine.id}/edit`}>
+                  
                   <button>Edit</button>
                 </Link>
                 <button onClick={() => handleOpen(wine.id)}>Delete</button>
@@ -83,11 +83,7 @@ export default function Wines(props) {
             )}
           </React.Fragment>
         ))}
-        <br />
 
-        {/* <Link to="/wines/new">
-          <button>Create</button>
-        </Link> */}
         {open && (
           <Modal
             open={open}

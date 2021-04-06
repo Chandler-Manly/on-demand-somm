@@ -29,7 +29,7 @@
 .prev-secondary {
   display: flex;
   justify-content: center;
-  background-color: #233d4d;
+  background-color: #5e0e0e;
   color: whitesmoke;
   width: 100px;
   height: 40px;
@@ -39,7 +39,7 @@
 .next-button:hover,
 .prev-secondary:hover {
   background-color: whitesmoke;
-  color: #233d4d;
+  color: #5e0e0e;
 }
 
 @media screen and (max-width: 375px) {

@@ -21,7 +21,7 @@
 
 _ON-DEMAND-SOMM is a platform for wine novices and aficionados to aggregate their tasting notes. Our team saw an opportunity to simplify and improve this critical part of the wine education process. Moreover, this web-application is a resource to aid wine enthusiasts during their journey._
 
-- Deployed via [Netlify](https://infallible-booth-6493d7.netlify.app/)
+- Deployed via [Netlify](https://on-demand-somm.netlify.app/)
 
 <br>
 

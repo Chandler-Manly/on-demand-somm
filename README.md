@@ -129,17 +129,17 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| File Structure, dependencies, and route layout    |    L     |     3 hrs      |     TBD     |    TBD    |
-| Backend setup: Build a Ruby on Rails server, exposing RESTful JSON endpoints|    H     |     2 hrs      |     TBD     |     TBD     |
-| Build a database with at least 3 tables|    H     |     3 hrs      |     TBD     |     TBD     |
-| Utilize Rails to define models for interacting with the database|    H     |     3 hrs      |     TBD     |     TBD     |
-| Implement working generic controller actions for Full CRUD (index, show, create, update, delete) between non-User tables|    H     |     2 hrs      |     TBD     |     TBD     |
-| Frontend setup: styling with flexbox|    H     |     10 hrs      |     TBD     |     TBD     |
-| Full CRUD, implement react-router|    H     |     10 hrs      |     TBD     |     TBD     |
-| Consume data from Rails API |    H     |     5 hrs      |     TBD     |     TBD     |
-| Unit Testing (may require additional research but will be testing throughout dev-process) |    H     |     3 hrs      |     TBD     |     TBD     |
+| File Structure, dependencies, and route layout    |    L     |     3 hrs      |     4 hrs     |    TBD    |
+| Backend setup: Build a Ruby on Rails server, exposing RESTful JSON endpoints|    H     |     2 hrs      |     1 hr     |     TBD     |
+| Build a database with at least 3 tables|    H     |     3 hrs      |     1 hr    |     TBD     |
+| Utilize Rails to define models for interacting with the database|    H     |     3 hrs      |     5 hrs     |     TBD     |
+| Implement working generic controller actions for Full CRUD (index, show, create, update, delete) between non-User tables|    H     |     2 hrs      |     3 hrs     |     TBD     |
+| Frontend setup: styling with flexbox|    H     |     10 hrs      |     12 hrs     |     TBD     |
+| Full CRUD, implement react-router|    H     |     10 hrs      |     12 hrs     |     TBD     |
+| Consume data from Rails API |    H     |     5 hrs      |     2 hrs     |     TBD     |
+| Unit Testing (may require additional research but will be testing throughout dev-process) |    H     |     3 hrs      |     3 hrs     |     TBD     |
 | Post MVP (Let's tackle payments so we can get paid $$$) |    H     |     10 hrs      |     TBD     |     TBD     |
-| TOTAL               |          |     51 hrs      |     TBD     |     TBD     |
+| TOTAL               |          |     51 hrs      |     43 hrs     |     TBD     |
 
 
 
@@ -165,18 +165,6 @@ src
 - Improve SEO and market on social media platforms
 - Invest proceeds into the Sapphire Coding Scholarship Fund 
 
-***
-
-## Code Showcase
-- Placeholder
-- Placeholder
-
-***
-## Code Issues & Resolutions
-- Placeholder
-- Placeholder
-
-***
 ## Open-Source: Contributing
 
 1. Fork and clone

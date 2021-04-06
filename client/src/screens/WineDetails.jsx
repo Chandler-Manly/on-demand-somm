@@ -32,7 +32,7 @@ export default function WineDetails(props) {
   return (
     <div className="wine-details-container">
       
-        <h1>Wine Details Page</h1>
+        <h1>Wine Details</h1>
       <h3>{wineItem?.name}</h3>
       <h4>{wineItem?.producer}</h4>
       <h5>{wineItem?.varietal}</h5>

@@ -71,6 +71,7 @@ export default function Wines(props) {
           <React.Fragment key={wine.id}>
             <Link to={`/wines/${wine.id}`}>
               <p>{wine.name}</p>
+              <p>{wine.producer}</p>
             </Link>
             {currentUser?.id === wine.user_id && (
               <>

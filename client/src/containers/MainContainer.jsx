@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Switch, Route, useHistory } from "react-router-dom";
 
-import Tastings from "../screens/Tastings";
 import Wines from "../screens/Wines";
 import WineCreate from "../screens/WineCreate";
 import WineEdit from "../screens/WineEdit";
@@ -90,14 +89,9 @@ export default function MainContainer(props) {
           currentUser={currentUser}
         />
       </Route>
-        {/* <Route path='/tastings'>
-          <Tastings
-            tastings={tastings}
-          />
-      </Route> */}
       <Route path="/users/:id">
         <WinesOfMine
-        currentUser={currentUser}
+          currentUser={currentUser}
         />
         </Route>
     </Switch>

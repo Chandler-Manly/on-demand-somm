@@ -132,7 +132,13 @@ class MasterForm extends React.Component {
         <div className="step-count">Step {this.state.currentStep} of 3</div>
         <div className="submission-form">
           <form className="submission-form-template">
-            <Step0 currentStep={this.state.currentStep} handleChange={this.handleChange}/>
+            <Step0
+              currentStep={this.state.currentStep}
+              handleChange={this.handleChange}
+              name={this.state.name}
+              varietal={this.state.varietal}
+              producer={this.state.producer}
+            />
             <Step1
               currentStep={this.state.currentStep}
               handleChange={this.handleTastingChange}

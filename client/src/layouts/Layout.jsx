@@ -49,7 +49,7 @@ export default function Layout(props) {
               <div>All Wine List</div>
             </Link>
             <Link to="/wines/new">
-              <div>Create new wine.</div>
+              <div>Create New Wine.</div>
             </Link>
             <Link to="/users/:id/">
               <div>My Tasted Wines</div>

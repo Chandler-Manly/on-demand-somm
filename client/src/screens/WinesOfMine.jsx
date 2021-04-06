@@ -6,7 +6,7 @@ import { AZ, ZA } from "../utils/sort";
 
 import Sort from "../components/Sort";
 import Search from "../components/Search";
-import '../assets/WineCards.css';
+import '../assets/WinesOfMine.css';
 
 
 const WinesofMine = (props) => {
@@ -63,7 +63,7 @@ const WinesofMine = (props) => {
   return (
     // <Layout user={props.currentUser}>
 <div>
-    <div className="our-wine-list-header">Our Wine List</div>
+          <div className="user-wines-heading"> My Tasted Wines </div>
     <Search onSubmit={handleSubmit} onChange={handleSearch} />
     <Sort onSubmit={handleSubmit} onChange={handleSort} />
     <div className="wines">
@@ -71,7 +71,6 @@ const WinesofMine = (props) => {
     </div>
       <div className="user-wine-container">
         <div className="user-wines-text">
-          <div className="user-wines-heading"> My Tasted Wines </div>
         </div>
         <div className="user-wines">
           {userWines.map((wine, index) => (

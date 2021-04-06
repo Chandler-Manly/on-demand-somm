@@ -15,13 +15,14 @@
 .form-header {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 40px;
+  font-size: 75px;
 }
 
 .step-count {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .next-button,

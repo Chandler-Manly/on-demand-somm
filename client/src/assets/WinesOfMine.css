@@ -1,0 +1,16 @@
+.user-wines-heading{
+  display: flex;
+  justify-content: center;
+  font-family: "Covered By Your Grace", cursive;
+  font-size: 75px;
+}
+
+.wines{
+padding-top:-20px;
+
+}
+
+.user-wine-container{
+  display: flex;
+  justify-content: center;
+}

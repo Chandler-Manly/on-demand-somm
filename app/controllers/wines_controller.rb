@@ -13,6 +13,7 @@ class WinesController < ApplicationController
   def show
     @wine = Wine.find(params[:id])
     render json: @wine, include: :tastings
+    
   end
 
   # POST /wines

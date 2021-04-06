@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../assets/Wine.css';
 
 
-const Wine = (props) => {
+export default function Wine (props) {
     return (
         <>
             <Link className="wine" to={`/wines/${props.id}`}>
@@ -13,4 +13,3 @@ const Wine = (props) => {
     )
 }
 
-export default Wine

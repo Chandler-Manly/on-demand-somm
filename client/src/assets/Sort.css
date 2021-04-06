@@ -18,7 +18,7 @@ select {
   font-size: 18px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 375px) {
   .sort-container {
     width: 100%;
     justify-content: center;

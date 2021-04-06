@@ -10,14 +10,11 @@
 }
 
 .register-header {
-
-  margin-top: 50px;
   padding-left: 100px;
   padding-right: 100px;
-  padding-bottom: 30px;
 }
 
-.register-subhead{
+.register-subhead {
   margin-bottom: 30px;
   font-size: 18px;
 }
@@ -25,7 +22,6 @@
 .individual-register-input {
   width: 500px;
   height: 35px;
-  padding: 10px;
   border-radius: 3.5px;
   border-color: #18101069;
 }
@@ -39,12 +35,13 @@
   text-align: center;
   padding-top: 55px;
   padding-bottom: 30px;
-  background-color: white;
+  background-color: rgb(223, 155, 166);
   width: 700px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
-  box-shadow: 5px 10px 5px;
+  border-top: 5px black;
+  box-shadow: 5px 10px 5px 5px;
 }
 
 .register-btn {
@@ -59,6 +56,8 @@
 
 .register-btn:hover {
   transform: scale(1.1);
+  background-color: #ffffff;
+  color: #233d4d;
 }
 
 #error-message {
@@ -111,7 +110,7 @@
   }
 }
 
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 380px) {
   .register-header {
     padding-left: 55px;
     padding-right: 55px;

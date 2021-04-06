@@ -1,7 +1,6 @@
 .carousel-wrapper {
   display: flex;
   justify-content: center;
-  width:1200px;
-  height:850px;
+  width: 1200px;
+  height: 850px;
 }
-

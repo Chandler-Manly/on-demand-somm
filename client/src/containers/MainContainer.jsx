@@ -90,11 +90,11 @@ export default function MainContainer(props) {
           currentUser={currentUser}
         />
       </Route>
-        <Route path='/tastings'>
+        {/* <Route path='/tastings'>
           <Tastings
             tastings={tastings}
           />
-      </Route>
+      </Route> */}
       <Route path="/users/:id">
         <WinesOfMine
         currentUser={currentUser}

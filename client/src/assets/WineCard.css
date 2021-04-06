@@ -21,7 +21,9 @@
 
 .wine-card a {
   text-decoration: underline;
-  letter-spacing: .7px;
+  letter-spacing: .7px;  display: flex;
+  justify-content: center;
+
 }
 
 @media (max-width: 500px) {

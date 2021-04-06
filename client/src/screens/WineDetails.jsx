@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import { addTasting } from '../services/tastings';
 import { getOneWine } from '../services/wines';
 
+import "../assets/WineDetails.css";
+
 export default function WineDetails(props) {
   const [wineItem, setWineItem] = useState(null);
   const [selectedTasting, setSelectedTasting] = useState('');
@@ -28,7 +30,7 @@ export default function WineDetails(props) {
   }
 
   return (
-    <div>
+    <div className="wine-details-container">
       
         <h1>Wine Details Page</h1>
       <h3>{wineItem?.name}</h3>

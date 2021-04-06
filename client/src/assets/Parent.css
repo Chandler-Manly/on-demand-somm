@@ -3,7 +3,7 @@
   justify-content: center;
   margin-bottom: 100px;
   margin-right: 150px;
-  margin-left:150px;
+  margin-left: 150px;
 }
 
 .form-buttons {
@@ -12,45 +12,46 @@
   padding-top: 40px;
 }
 
-.form-header{
-  display: flex;
-  justify-content: center;
-  padding-top:20px;
-}
-
-.step-count{
+.form-header {
   display: flex;
   justify-content: center;
   padding-top: 20px;
 }
 
-.next-button, .prev-secondary  {
+.step-count {
   display: flex;
   justify-content: center;
-  background-color: #233D4D;
+  padding-top: 20px;
+}
+
+.next-button,
+.prev-secondary {
+  display: flex;
+  justify-content: center;
+  background-color: #233d4d;
   color: whitesmoke;
   width: 100px;
   height: 40px;
   align-items: center;
 }
 
-.next-button:hover, .prev-secondary:hover  {
+.next-button:hover,
+.prev-secondary:hover {
   background-color: whitesmoke;
-  color: #233D4D;
+  color: #233d4d;
 }
 
-@media screen and (max-width: 375px){
-.form-header {
-  font-size: 30px;
-  text-align: center;
+@media screen and (max-width: 375px) {
+  .form-header {
+    font-size: 30px;
+    text-align: center;
+  }
 
-}
+  .step-count {
+    font-size: 25px;
+  }
 
-.step-count {
-  font-size: 25px;
-}
-
-  .submission-form-template{
-  width: 340px;
-}
+  .submission-form-template {
+    width: 340px;
+  }
 }

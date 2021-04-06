@@ -4,8 +4,8 @@
 }
 
 .create-condition {
- margin-bottom: 20px;
- margin-top: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .create-intensity-palate {
@@ -25,21 +25,19 @@
   margin-top: 10px;
 }
 
-.create-aromas_tertiary{
+.create-aromas_tertiary {
   width: 500px;
   margin-bottom: 20px;
   margin-top: 10px;
 }
 
-.create-development{
+.create-development {
   width: 500px;
   margin-bottom: 20px;
-
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
   .create-description {
     width: 340px;
   }
-  }
-  
+}

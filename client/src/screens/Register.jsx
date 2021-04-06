@@ -78,7 +78,7 @@ const Register = (props) => {
   const { email, username, password, passwordConfirmation } = form;
 
   return (
-      <div className="form-container-sign-up">
+      <div className="form-container-register">
         <div className="register-head-section">
           <h3 className="register-header">Create Account</h3>
         </div>

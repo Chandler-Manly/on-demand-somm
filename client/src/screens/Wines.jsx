@@ -84,9 +84,9 @@ export default function Wines(props) {
         ))}
         <br />
 
-        <Link to="/wines/new">
+        {/* <Link to="/wines/new">
           <button>Create</button>
-        </Link>
+        </Link> */}
         {open && (
           <Modal
             open={open}

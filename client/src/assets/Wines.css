@@ -6,16 +6,16 @@
   padding: 40px;
 }
 
-.our-wine-list-header{
+.our-wine-list-header {
   font-size: xx-large;
-  font-family: 'Covered By Your Grace', cursive;
+  font-family: "Covered By Your Grace", cursive;
   display: flex;
   justify-content: center;
 }
 
 @media (max-width: 500px) {
   .wines {
-      width: 100%;
-      justify-content: space-around;
+    width: 100%;
+    justify-content: space-around;
   }
 }

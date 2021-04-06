@@ -7,19 +7,16 @@
 .create-sweetness {
   margin-bottom: 20px;
   width: 200px;
-  
 }
 
 .create-acidity {
   margin-bottom: 20px;
   width: 200px;
-  
 }
 
 .create-tannin {
   margin-bottom: 20px;
   width: 200px;
-  
 }
 
 .create-mousse {
@@ -27,44 +24,41 @@
   width: 200px;
 }
 
-.create-intensity_flavor{
+.create-intensity_flavor {
   margin-bottom: 20px;
   width: 500px;
 }
-
 
 .create-body {
   margin-bottom: 20px;
   width: 500px;
-  
 }
 
-.create-flavor_characteristics_primary{
-  margin-bottom: 20px;
-  width: 500px;
-}
-
-.create-flavor_characteristics_secondary{
+.create-flavor_characteristics_primary {
   margin-bottom: 20px;
   width: 500px;
 }
 
-.create-flavor_characteristics_tertiary{
+.create-flavor_characteristics_secondary {
   margin-bottom: 20px;
   width: 500px;
 }
-.create-finish{
+
+.create-flavor_characteristics_tertiary {
   margin-bottom: 20px;
   width: 500px;
 }
-.form-control{
+.create-finish {
+  margin-bottom: 20px;
+  width: 500px;
+}
+.form-control {
   justify-content: center;
   padding-top: 10px;
 }
-.create-quality_level{
+.create-quality_level {
   margin-bottom: 20px;
   width: 500px;
-
 }
 .form-group-3 {
   display: flex;
@@ -74,21 +68,19 @@
 .submit-button {
   justify-content: center;
   background-color: whitesmoke;
-  color: #233D4D;
+  color: #233d4d;
   width: 100px;
   align-items: center;
 }
 
 .submit-button:hover {
   justify-content: center;
-  background-color:  #233D4D;
+  background-color: #233d4d;
   color: whitesmoke;
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
   .create-image-address {
     width: 340px;
-    
   }
-  }
-  
+}

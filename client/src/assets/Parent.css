@@ -56,3 +56,21 @@
     width: 340px;
   }
 }
+
+
+
+
+@media screen and (max-width: 375px) {
+  .form-header {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .step-count {
+    font-size: 25px;
+  }
+
+  .submission-form-template {
+    width: 340px;
+  }
+}

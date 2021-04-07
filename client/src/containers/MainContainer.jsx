@@ -16,6 +16,7 @@ import { postWine } from "../services/wines";
 import { putWine } from "../services/wines";
 
 import AboutUs from "../assets/AboutUs";
+// import TastingEdit from "../screens/TastingEdit";
 
 export default function MainContainer(props) {
   const [tastings, setTastings] = useState([]);
@@ -74,6 +75,10 @@ export default function MainContainer(props) {
           wines={wines}
           handleUpdate={handleUpdate}
         />
+        {/* <TastingEdit
+          tastings={tastings}
+          handleUpdate={handleUpdate}
+          /> */}
       </Route>
       <Route path="/wines/:id">
         <WineDetails

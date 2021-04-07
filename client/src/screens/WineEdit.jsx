@@ -4,7 +4,8 @@ import { useParams } from 'react-router-dom';
 export default function WineEdit(props) {
   const [formData, setFormData] = useState({
     name: '',
-    producer:''
+    producer: '',
+    varietal:''
   });
   const { name, producer, varietal } = formData;
   const { id } = useParams();
@@ -68,6 +69,6 @@ export default function WineEdit(props) {
         />
       </label>
       <button>Submit</button>
-      </form>
+    </form>
   )
 }

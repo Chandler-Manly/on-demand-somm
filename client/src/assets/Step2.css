@@ -36,6 +36,13 @@
   margin-bottom: 20px;
 }
 
+.form-group-2 {
+  border: 2px gray solid;
+  box-shadow: 10px 5px 5px black;
+  padding: 20px;
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 375px) {
   .create-description {
     width: 340px;

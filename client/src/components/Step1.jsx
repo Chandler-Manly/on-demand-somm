@@ -35,23 +35,20 @@ function Step1(props) {
           <option value="" disable selected>
             Select Clarity
           </option>
-          <option selected={props.clarity==="clear"} value="clear">
+          <option selected={props.clarity === "clear"} value="clear">
             Clear
           </option>
-          <option selected={props.clarity==="hazy"} value="hazy">
+          <option selected={props.clarity === "hazy"} value="hazy">
             Hazy
           </option>
-          <option selected={props.clarity==="faulty"} value="faulty">
+          <option selected={props.clarity === "faulty"} value="faulty">
             Faulty
           </option>
         </select>
       </div>
 
       <div className="create-intensity-aromatics">
-        <label>
-          Pale like Edward Cullen from Twilight Saga? Or deep, vibrant colors
-          like fresh fruit at the farmer's market?
-        </label>
+        <label>Pale or deep?</label>
         <select
           required
           className="create-intensity-aromatics"
@@ -62,27 +59,23 @@ function Step1(props) {
           <option value="" disable selected>
             Select color intensity.
           </option>
-          <option
-            selected={props.intensity_aromatics==="deep"}
-            value="deep">
+          <option selected={props.intensity_aromatics === "deep"} value="deep">
             Deep
           </option>
           <option
-            selected={props.intensity_aromatics==="medium"}
+            selected={props.intensity_aromatics === "medium"}
             value="medium"
           >
             Medium
           </option>
-          <option
-            selected={props.intensity_aromatics === "pale"}
-            value="pale">
+          <option selected={props.intensity_aromatics === "pale"} value="pale">
             Pale
           </option>
         </select>
       </div>
 
       <div className="select-create-color">
-        <label>Red or white? Can we take it a step further?</label>
+        <label>Red or white?</label>
 
         <select
           required
@@ -94,38 +87,36 @@ function Step1(props) {
           <option value="" disable selected>
             Select Color
           </option>
-          <option selected={props.color==="salmon"} value="salmon">
+          <option selected={props.color === "salmon"} value="salmon">
             Salmon
           </option>
-          <option selected={props.color==="pink"} value="pink">
+          <option selected={props.color === "pink"} value="pink">
             Pink
           </option>
-          <option selected={props.color==="garnet"} value="garnet">
+          <option selected={props.color === "garnet"} value="garnet">
             Garnet
           </option>
-          <option selected={props.color==="lemon-green"} value="lemon-green">
+          <option selected={props.color === "lemon-green"} value="lemon-green">
             Lemon-green
           </option>
-          <option selected={props.color==="lemon"} value="lemon">
+          <option selected={props.color === "lemon"} value="lemon">
             Lemon
           </option>
-          <option selected={props.color==="gold"} value="gold">
+          <option selected={props.color === "gold"} value="gold">
             Gold
           </option>
-          <option selected={props.color==="amber"} value="amber">
+          <option selected={props.color === "amber"} value="amber">
             Amber
           </option>
-          <option selected={props.color==="brown"} value="brown">
+          <option selected={props.color === "brown"} value="brown">
             Brown
           </option>
-          <option selected={props.color==="purple"} value="purple">
+          <option selected={props.color === "purple"} value="purple">
             Purple
           </option>
         </select>
       </div>
-      <label>
-        Is there evidence of gas or sediment? How about tears? Staining?
-      </label>
+      <label>Evidence of gas or sediment? Tears? Staining?</label>
 
       <select
         required

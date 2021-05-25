@@ -12,3 +12,10 @@ max-width: 500px;
   padding-bottom: 20px;
 
 }
+
+.form-group-0 {
+  border: 2px gray solid;
+  box-shadow: 10px 5px 5px black;
+  padding: 20px;
+  margin-top: 20px;
+}
